@@ -1,0 +1,901 @@
+subjCode,Item,cluster_nc,cluster_IDs,x_coord,y_coord,label
+SAL_101b,VCS_10,4,1,166,-279,stars
+SAL_101b,VCS_20,4,1,284,-279,stars
+SAL_101b,VCS_30,4,1,224,-144,stars
+SAL_101b,VCS_320,4,1,92,-150,stars
+SAL_101b,VCS_330,4,1,103,-266,stars
+SAL_101b,VCS_340,4,1,287,-137,stars
+SAL_101b,VCS_350,4,1,164,-150,stars
+SAL_101b,VCS_360,4,1,289,-216,stars
+SAL_101b,VCS_40,4,1,230,-215,stars
+SAL_101b,VCS_50,4,1,95,-213,stars
+SAL_101b,VCS_60,4,1,230,-274,stars
+SAL_101b,VCS_70,4,1,161,-220,stars
+SAL_101b,VCS_100,4,2,144,226,miscellaneous
+SAL_101b,VCS_110,4,2,200,233,miscellaneous
+SAL_101b,VCS_120,4,2,111,150,miscellaneous
+SAL_101b,VCS_130,4,2,325,236,miscellaneous
+SAL_101b,VCS_140,4,2,263,238,miscellaneous
+SAL_101b,VCS_150,4,2,93,229,miscellaneous
+SAL_101b,VCS_160,4,2,165,157,miscellaneous
+SAL_101b,VCS_80,4,2,227,154,miscellaneous
+SAL_101b,VCS_90,4,2,322,163,miscellaneous
+SAL_101b,VCS_170,4,3,-444,-190,random
+SAL_101b,VCS_180,4,3,-447,-254,random
+SAL_101b,VCS_190,4,3,-304,-189,random
+SAL_101b,VCS_200,4,3,-374,-182,random
+SAL_101b,VCS_210,4,4,-471,246,pentagon
+SAL_101b,VCS_220,4,4,-325,246,pentagon
+SAL_101b,VCS_230,4,4,-398,247,pentagon
+SAL_101b,VCS_240,4,4,-400,171,pentagon
+SAL_101b,VCS_250,4,4,-322,172,pentagon
+SAL_101b,VCS_260,4,4,-474,170,pentagon
+SAL_101b,VCS_270,4,4,-323,90,pentagon
+SAL_101b,VCS_280,4,4,-395,94,pentagon
+SAL_101b,VCS_290,4,4,-466,99,pentagon
+SAL_101b,VCS_300,4,4,-470,23,pentagon
+SAL_101b,VCS_310,4,4,-400,22,pentagon
+SAL_103b,VCS_10,5,1,116,169,stars with smooth edges
+SAL_103b,VCS_20,5,1,75,169,stars with smooth edges
+SAL_103b,VCS_30,5,1,44,211,stars with smooth edges
+SAL_103b,VCS_40,5,1,31,147,stars with smooth edges
+SAL_103b,VCS_50,5,1,-25,138,stars with smooth edges
+SAL_103b,VCS_60,5,1,19,92,stars with smooth edges
+SAL_103b,VCS_70,5,1,76,117,stars with smooth edges
+SAL_103b,VCS_100,5,2,336,102,shapes that don't fit any other category
+SAL_103b,VCS_110,5,2,402,53,shapes that don't fit any other category
+SAL_103b,VCS_120,5,2,363,168,shapes that don't fit any other category
+SAL_103b,VCS_130,5,2,429,147,shapes that don't fit any other category
+SAL_103b,VCS_140,5,2,373,64,shapes that don't fit any other category
+SAL_103b,VCS_150,5,2,391,107,shapes that don't fit any other category
+SAL_103b,VCS_80,5,2,459,91,shapes that don't fit any other category
+SAL_103b,VCS_90,5,2,430,48,shapes that don't fit any other category
+SAL_103b,VCS_160,5,3,-197,-147,shapes with horizontal line and smooth edges
+SAL_103b,VCS_170,5,3,-28,-202,shapes with horizontal line and smooth edges
+SAL_103b,VCS_180,5,3,-120,-141,shapes with horizontal line and smooth edges
+SAL_103b,VCS_190,5,3,-53,-137,shapes with horizontal line and smooth edges
+SAL_103b,VCS_200,5,3,-158,-199,shapes with horizontal line and smooth edges
+SAL_103b,VCS_210,5,3,-89,-199,shapes with horizontal line and smooth edges
+SAL_103b,VCS_220,5,4,-425,-229,horizontal base and straight lines
+SAL_103b,VCS_230,5,4,-529,-189,horizontal base and straight lines
+SAL_103b,VCS_240,5,4,-492,-233,horizontal base and straight lines
+SAL_103b,VCS_250,5,4,-463,-132,horizontal base and straight lines
+SAL_103b,VCS_260,5,4,-492,-164,horizontal base and straight lines
+SAL_103b,VCS_270,5,4,-552,-242,horizontal base and straight lines
+SAL_103b,VCS_280,5,4,-531,-136,horizontal base and straight lines
+SAL_103b,VCS_290,5,4,-431,-167,horizontal base and straight lines
+SAL_103b,VCS_300,5,4,-464,-183,horizontal base and straight lines
+SAL_103b,VCS_310,5,5,-237,8,stars with straight edges
+SAL_103b,VCS_320,5,5,-372,69,stars with straight edges
+SAL_103b,VCS_330,5,5,-239,58,stars with straight edges
+SAL_103b,VCS_340,5,5,-295,24,stars with straight edges
+SAL_103b,VCS_350,5,5,-298,77,stars with straight edges
+SAL_103b,VCS_360,5,5,-351,20,stars with straight edges
+SAL_104b,VCS_10,7,1,-239,143,somewhat pointed sides
+SAL_104b,VCS_330,7,1,-186,140,somewhat pointed sides
+SAL_104b,VCS_340,7,1,-286,147,somewhat pointed sides
+SAL_104b,VCS_350,7,1,-205,200,somewhat pointed sides
+SAL_104b,VCS_360,7,1,-252,177,somewhat pointed sides
+SAL_104b,VCS_100,7,2,451,-131,u shape on top with flatter bottom
+SAL_104b,VCS_110,7,2,458,-313,u shape on top with flatter bottom
+SAL_104b,VCS_130,7,2,460,-373,u shape on top with flatter bottom
+SAL_104b,VCS_80,7,2,454,-197,u shape on top with flatter bottom
+SAL_104b,VCS_90,7,2,454,-255,u shape on top with flatter bottom
+SAL_104b,VCS_120,7,3,451,-64,u shape on top with flatter bottom
+SAL_104b,VCS_140,7,3,448,2,u shape on top with flatter bottom
+SAL_104b,VCS_150,7,3,450,65,u shape on top with flatter bottom
+SAL_104b,VCS_160,7,4,144,367,resembles a vase shape
+SAL_104b,VCS_170,7,4,225,370,resembles a vase shape
+SAL_104b,VCS_180,7,4,183,404,resembles a vase shape
+SAL_104b,VCS_190,7,4,186,331,resembles a vase shape
+SAL_104b,VCS_250,7,4,229,232,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_20,7,5,-86,-99,four somewhat rounded points
+SAL_104b,VCS_30,7,5,-105,-133,four somewhat rounded points
+SAL_104b,VCS_40,7,5,-131,-97,four somewhat rounded points
+SAL_104b,VCS_50,7,5,-135,-132,four somewhat rounded points
+SAL_104b,VCS_60,7,5,-119,-55,four somewhat rounded points
+SAL_104b,VCS_70,7,5,-55,-145,four somewhat rounded points
+SAL_104b,VCS_200,7,6,-38,383,slightly rounded pentagons
+SAL_104b,VCS_210,7,6,-108,338,slightly rounded pentagons
+SAL_104b,VCS_220,7,6,-37,317,slightly rounded pentagons
+SAL_104b,VCS_230,7,7,144,115,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_240,7,7,304,223,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_260,7,7,196,166,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_270,7,7,211,99,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_280,7,7,315,150,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_290,7,7,258,179,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_300,7,7,307,86,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_310,7,7,254,116,top half resembles a star with a square shaped bottom
+SAL_104b,VCS_320,7,7,258,50,top half resembles a star with a square shaped bottom
+SAL_105b,VCS_10,2,1,0,14,four points
+SAL_105b,VCS_20,2,1,32,-11,four points
+SAL_105b,VCS_30,2,1,10,-26,four points
+SAL_105b,VCS_320,2,1,36,-5,four points
+SAL_105b,VCS_330,2,1,-8,19,four points
+SAL_105b,VCS_340,2,1,2,-9,four points
+SAL_105b,VCS_350,2,1,7,0,four points
+SAL_105b,VCS_360,2,1,20,3,four points
+SAL_105b,VCS_40,2,1,-24,-28,four points
+SAL_105b,VCS_50,2,1,-1,-13,four points
+SAL_105b,VCS_60,2,1,-48,6,four points
+SAL_105b,VCS_70,2,1,24,-9,four points
+SAL_105b,VCS_100,2,2,-395,221,flat bottom
+SAL_105b,VCS_110,2,2,-347,231,flat bottom
+SAL_105b,VCS_120,2,2,-410,163,flat bottom
+SAL_105b,VCS_130,2,2,-357,225,flat bottom
+SAL_105b,VCS_140,2,2,-365,119,flat bottom
+SAL_105b,VCS_150,2,2,-418,182,flat bottom
+SAL_105b,VCS_160,2,2,-375,248,flat bottom
+SAL_105b,VCS_170,2,2,-456,171,flat bottom
+SAL_105b,VCS_180,2,2,-513,149,flat bottom
+SAL_105b,VCS_190,2,2,-399,273,flat bottom
+SAL_105b,VCS_200,2,2,-468,272,flat bottom
+SAL_105b,VCS_210,2,2,-398,219,flat bottom
+SAL_105b,VCS_220,2,2,-396,108,flat bottom
+SAL_105b,VCS_230,2,2,-419,218,flat bottom
+SAL_105b,VCS_240,2,2,-491,262,flat bottom
+SAL_105b,VCS_250,2,2,-458,221,flat bottom
+SAL_105b,VCS_260,2,2,-420,123,flat bottom
+SAL_105b,VCS_270,2,2,-465,119,flat bottom
+SAL_105b,VCS_280,2,2,-510,200,flat bottom
+SAL_105b,VCS_290,2,2,-425,159,flat bottom
+SAL_105b,VCS_300,2,2,-432,111,flat bottom
+SAL_105b,VCS_310,2,2,-499,218,flat bottom
+SAL_105b,VCS_80,2,2,-420,187,flat bottom
+SAL_105b,VCS_90,2,2,-417,214,flat bottom
+SAL_106b,VCS_10,2,1,-92,93,edges
+SAL_106b,VCS_190,2,1,13,191,edges
+SAL_106b,VCS_200,2,1,-98,261,edges
+SAL_106b,VCS_210,2,1,-27,138,edges
+SAL_106b,VCS_220,2,1,-376,144,edges
+SAL_106b,VCS_230,2,1,-61,211,edges
+SAL_106b,VCS_240,2,1,-185,173,edges
+SAL_106b,VCS_250,2,1,-310,123,edges
+SAL_106b,VCS_260,2,1,-361,219,edges
+SAL_106b,VCS_270,2,1,-292,192,edges
+SAL_106b,VCS_280,2,1,-195,108,edges
+SAL_106b,VCS_290,2,1,-247,141,edges
+SAL_106b,VCS_300,2,1,-241,281,edges
+SAL_106b,VCS_310,2,1,-237,218,edges
+SAL_106b,VCS_320,2,1,-296,252,edges
+SAL_106b,VCS_330,2,1,-131,205,edges
+SAL_106b,VCS_340,2,1,-179,243,edges
+SAL_106b,VCS_350,2,1,-94,153,edges
+SAL_106b,VCS_360,2,1,-135,120,edges
+SAL_106b,VCS_100,2,2,-140,-126,curves
+SAL_106b,VCS_110,2,2,-328,-243,curves
+SAL_106b,VCS_120,2,2,-320,-170,curves
+SAL_106b,VCS_130,2,2,-268,-274,curves
+SAL_106b,VCS_140,2,2,-148,-267,curves
+SAL_106b,VCS_150,2,2,-260,-198,curves
+SAL_106b,VCS_160,2,2,-139,-200,curves
+SAL_106b,VCS_170,2,2,-194,-51,curves
+SAL_106b,VCS_180,2,2,-68,-114,curves
+SAL_106b,VCS_20,2,2,-314,-52,curves
+SAL_106b,VCS_30,2,2,-124,-56,curves
+SAL_106b,VCS_40,2,2,-196,-123,curves
+SAL_106b,VCS_50,2,2,-314,-105,curves
+SAL_106b,VCS_60,2,2,-260,-75,curves
+SAL_106b,VCS_70,2,2,-256,-129,curves
+SAL_106b,VCS_80,2,2,-193,-195,curves
+SAL_106b,VCS_90,2,2,-208,-259,curves
+SAL_108b,VCS_10,6,1,360,-29,ninja stars
+SAL_108b,VCS_320,6,1,291,-100,ninja stars
+SAL_108b,VCS_330,6,1,340,-72,ninja stars
+SAL_108b,VCS_340,6,1,398,-124,ninja stars
+SAL_108b,VCS_350,6,1,344,-119,ninja stars
+SAL_108b,VCS_360,6,1,388,-73,ninja stars
+SAL_108b,VCS_100,6,2,-242,-151,rabbits
+SAL_108b,VCS_110,6,2,-190,-94,rabbits
+SAL_108b,VCS_120,6,2,-265,-17,rabbits
+SAL_108b,VCS_130,6,2,-177,-158,rabbits
+SAL_108b,VCS_70,6,2,-255,-77,rabbits
+SAL_108b,VCS_80,6,2,-296,-149,rabbits
+SAL_108b,VCS_90,6,2,-312,-78,rabbits
+SAL_108b,VCS_140,6,3,-137,246,bodies
+SAL_108b,VCS_150,6,3,-197,258,bodies
+SAL_108b,VCS_160,6,3,-268,263,bodies
+SAL_108b,VCS_170,6,3,-335,271,bodies
+SAL_108b,VCS_180,6,3,-299,194,bodies
+SAL_108b,VCS_190,6,3,-236,195,bodies
+SAL_108b,VCS_200,6,3,-166,323,bodies
+SAL_108b,VCS_20,6,4,81,-56,weird pentagons
+SAL_108b,VCS_30,6,4,125,-90,weird pentagons
+SAL_108b,VCS_40,6,4,173,-47,weird pentagons
+SAL_108b,VCS_50,6,4,121,-41,weird pentagons
+SAL_108b,VCS_60,6,4,137,12,weird pentagons
+SAL_108b,VCS_210,6,5,349,179,pentagons
+SAL_108b,VCS_220,6,5,297,221,pentagons
+SAL_108b,VCS_230,6,5,359,240,pentagons
+SAL_108b,VCS_240,6,6,-64,55,weird pentagons
+SAL_108b,VCS_250,6,6,-6,85,weird pentagons
+SAL_108b,VCS_260,6,6,-50,128,weird pentagons
+SAL_108b,VCS_270,6,6,-62,-30,weird pentagons
+SAL_108b,VCS_280,6,6,-116,109,weird pentagons
+SAL_108b,VCS_290,6,6,-130,49,weird pentagons
+SAL_108b,VCS_300,6,6,-22,21,weird pentagons
+SAL_108b,VCS_310,6,6,-100,0,weird pentagons
+SAL_109b,VCS_10,4,1,-482,312,four point
+SAL_109b,VCS_20,4,1,-643,337,four point
+SAL_109b,VCS_30,4,1,-526,368,four point
+SAL_109b,VCS_340,4,1,-627,402,four point
+SAL_109b,VCS_350,4,1,-564,416,four point
+SAL_109b,VCS_360,4,1,-579,341,four point
+SAL_109b,VCS_40,4,1,-487,405,four point
+SAL_109b,VCS_50,4,1,-541,286,four point
+SAL_109b,VCS_60,4,1,-603,282,four point
+SAL_109b,VCS_100,4,2,594,-257,curved
+SAL_109b,VCS_110,4,2,468,-401,curved
+SAL_109b,VCS_120,4,2,542,-393,curved
+SAL_109b,VCS_130,4,2,446,-336,curved
+SAL_109b,VCS_140,4,2,378,-271,curved
+SAL_109b,VCS_150,4,2,445,-238,curved
+SAL_109b,VCS_70,4,2,368,-413,curved
+SAL_109b,VCS_80,4,2,517,-290,curved
+SAL_109b,VCS_90,4,2,347,-346,curved
+SAL_109b,VCS_160,4,3,623,360,trapezoidish
+SAL_109b,VCS_170,4,3,544,208,trapezoidish
+SAL_109b,VCS_180,4,3,611,196,trapezoidish
+SAL_109b,VCS_190,4,3,613,288,trapezoidish
+SAL_109b,VCS_200,4,3,460,310,trapezoidish
+SAL_109b,VCS_210,4,3,541,345,trapezoidish
+SAL_109b,VCS_220,4,3,476,240,trapezoidish
+SAL_109b,VCS_230,4,3,477,393,trapezoidish
+SAL_109b,VCS_240,4,4,-390,-334,three point
+SAL_109b,VCS_250,4,4,-554,-270,three point
+SAL_109b,VCS_260,4,4,-425,-390,three point
+SAL_109b,VCS_270,4,4,-578,-420,three point
+SAL_109b,VCS_280,4,4,-640,-404,three point
+SAL_109b,VCS_290,4,4,-461,-293,three point
+SAL_109b,VCS_300,4,4,-521,-352,three point
+SAL_109b,VCS_310,4,4,-490,-408,three point
+SAL_109b,VCS_320,4,4,-641,-320,three point
+SAL_109b,VCS_330,4,4,-589,-353,three point
+SAL_110b,VCS_10,10,1,-346,-346,direction stars
+SAL_110b,VCS_310,10,1,-205,-250,flat direction
+SAL_110b,VCS_320,10,1,-251,-208,flat direction
+SAL_110b,VCS_350,10,1,-393,-353,direction stars
+SAL_110b,VCS_360,10,1,-376,-295,direction stars
+SAL_110b,VCS_100,10,2,59,30,bibs
+SAL_110b,VCS_110,10,2,5,21,bibs
+SAL_110b,VCS_90,10,2,111,37,bibs
+SAL_110b,VCS_120,10,3,20,279,sharp bibs
+SAL_110b,VCS_130,10,3,75,281,sharp bibs
+SAL_110b,VCS_140,10,4,300,370,vases
+SAL_110b,VCS_150,10,4,244,383,vases
+SAL_110b,VCS_160,10,4,368,382,vases
+SAL_110b,VCS_70,10,4,277,258,flat bibs
+SAL_110b,VCS_80,10,4,224,257,flat bibs
+SAL_110b,VCS_170,10,5,235,-354,squiggly blob
+SAL_110b,VCS_180,10,5,300,-370,squiggly blob
+SAL_110b,VCS_190,10,5,283,-298,squiggly blob
+SAL_110b,VCS_220,10,5,283,-181,sharp pentagon
+SAL_110b,VCS_230,10,5,345,-167,sharp pentagon
+SAL_110b,VCS_20,10,6,-299,344,round twinkles
+SAL_110b,VCS_30,10,6,-271,301,round twinkles
+SAL_110b,VCS_40,10,6,-247,356,round twinkles
+SAL_110b,VCS_200,10,7,-503,360,pentagon
+SAL_110b,VCS_210,10,7,-560,350,pentagon
+SAL_110b,VCS_290,10,7,-426,281,pentagon
+SAL_110b,VCS_300,10,7,-463,236,pentagon
+SAL_110b,VCS_240,10,8,233,75,flat stars
+SAL_110b,VCS_250,10,8,289,122,flat stars
+SAL_110b,VCS_260,10,8,300,36,flat stars
+SAL_110b,VCS_50,10,8,467,136,thicker twinkles
+SAL_110b,VCS_60,10,8,528,136,thicker twinkles
+SAL_110b,VCS_270,10,9,-415,4,skinny flat stars
+SAL_110b,VCS_280,10,9,-469,24,skinny flat stars
+SAL_110b,VCS_330,10,10,28,-320,point stars
+SAL_110b,VCS_340,10,10,0,-370,point stars
+SAL_111b,VCS_10,3,1,-395,188,space star
+SAL_111b,VCS_190,3,1,-475,67,space star
+SAL_111b,VCS_20,3,1,-309,100,space star
+SAL_111b,VCS_200,3,1,-441,193,space star
+SAL_111b,VCS_30,3,1,-311,67,space star
+SAL_111b,VCS_350,3,1,-335,147,space star
+SAL_111b,VCS_360,3,1,-339,166,space star
+SAL_111b,VCS_40,3,1,-381,143,space star
+SAL_111b,VCS_50,3,1,-362,90,space star
+SAL_111b,VCS_60,3,1,-294,177,space star
+SAL_111b,VCS_100,3,2,-7,-11,flat bottoms
+SAL_111b,VCS_110,3,2,7,-26,flat bottoms
+SAL_111b,VCS_120,3,2,-15,-41,flat bottoms
+SAL_111b,VCS_130,3,2,49,-68,flat bottoms
+SAL_111b,VCS_140,3,2,-4,-33,flat bottoms
+SAL_111b,VCS_260,3,2,-18,-9,flat bottoms
+SAL_111b,VCS_270,3,2,-9,-41,flat bottoms
+SAL_111b,VCS_280,3,2,-18,-28,flat bottoms
+SAL_111b,VCS_290,3,2,-26,-32,flat bottoms
+SAL_111b,VCS_300,3,2,-31,-12,flat bottoms
+SAL_111b,VCS_310,3,2,-26,-6,flat bottoms
+SAL_111b,VCS_320,3,2,-32,5,flat bottoms
+SAL_111b,VCS_340,3,2,-7,8,flat bottoms
+SAL_111b,VCS_70,3,2,15,-24,flat bottoms
+SAL_111b,VCS_80,3,2,-9,0,flat bottoms
+SAL_111b,VCS_90,3,2,21,-25,flat bottoms
+SAL_111b,VCS_150,3,3,323,70,semi square
+SAL_111b,VCS_160,3,3,312,74,semi square
+SAL_111b,VCS_170,3,3,346,98,semi square
+SAL_111b,VCS_180,3,3,298,72,semi square
+SAL_111b,VCS_210,3,3,277,139,semi square
+SAL_111b,VCS_220,3,3,289,121,semi square
+SAL_111b,VCS_230,3,3,319,134,semi square
+SAL_111b,VCS_240,3,3,377,69,semi square
+SAL_111b,VCS_250,3,3,354,121,semi square
+SAL_111b,VCS_330,3,3,385,67,semi square
+SAL_112b,VCS_10,6,1,-9,-241,three spikes
+SAL_112b,VCS_20,6,1,11,-260,three spikes
+SAL_112b,VCS_300,6,1,63,-288,three spikes
+SAL_112b,VCS_320,6,1,4,-272,three spikes
+SAL_112b,VCS_330,6,1,-108,-238,three spikes
+SAL_112b,VCS_340,6,1,-40,-317,three spikes
+SAL_112b,VCS_350,6,1,17,-233,three spikes
+SAL_112b,VCS_360,6,1,-2,-213,three spikes
+SAL_112b,VCS_100,6,2,287,34,two rounded horns
+SAL_112b,VCS_110,6,2,215,77,two rounded horns
+SAL_112b,VCS_120,6,2,316,67,two rounded horns
+SAL_112b,VCS_130,6,2,269,47,two rounded horns
+SAL_112b,VCS_140,6,2,167,34,two rounded horns
+SAL_112b,VCS_150,6,2,248,60,two rounded horns
+SAL_112b,VCS_160,6,2,279,31,two rounded horns
+SAL_112b,VCS_170,6,2,242,49,two rounded horns
+SAL_112b,VCS_260,6,2,224,48,two rounded horns
+SAL_112b,VCS_60,6,2,151,52,two rounded horns
+SAL_112b,VCS_70,6,2,210,61,two rounded horns
+SAL_112b,VCS_80,6,2,236,85,two rounded horns
+SAL_112b,VCS_180,6,3,-471,-92,rounded pentagon
+SAL_112b,VCS_190,6,3,-463,-87,rounded pentagon
+SAL_112b,VCS_200,6,3,-489,-83,rounded pentagon
+SAL_112b,VCS_210,6,3,-457,-100,rounded pentagon
+SAL_112b,VCS_250,6,3,-480,-84,rounded pentagon
+SAL_112b,VCS_220,6,4,-75,370,pentagons
+SAL_112b,VCS_230,6,4,0,370,pentagons
+SAL_112b,VCS_240,6,4,-46,358,pentagons
+SAL_112b,VCS_270,6,5,-233,69,half stars
+SAL_112b,VCS_280,6,5,-192,38,half stars
+SAL_112b,VCS_290,6,5,-286,45,half stars
+SAL_112b,VCS_310,6,5,-185,56,half stars
+SAL_112b,VCS_30,6,6,640,300,extra
+SAL_112b,VCS_40,6,6,598,256,extra
+SAL_112b,VCS_50,6,6,653,256,extra
+SAL_112b,VCS_90,6,6,591,241,extra
+SAL_113b,VCS_10,6,1,242,132,cross
+SAL_113b,VCS_320,6,1,243,132,cross
+SAL_113b,VCS_330,6,1,240,127,cross
+SAL_113b,VCS_340,6,1,244,123,cross
+SAL_113b,VCS_350,6,1,255,117,cross
+SAL_113b,VCS_360,6,1,245,125,cross
+SAL_113b,VCS_100,6,2,176,-90,amoeba
+SAL_113b,VCS_110,6,2,232,-78,amoeba
+SAL_113b,VCS_120,6,2,213,-99,amoeba
+SAL_113b,VCS_130,6,2,219,-89,amoeba
+SAL_113b,VCS_140,6,2,246,-73,amoeba
+SAL_113b,VCS_150,6,2,224,-108,amoeba
+SAL_113b,VCS_160,6,2,257,-68,amoeba
+SAL_113b,VCS_60,6,2,227,-76,amoeba
+SAL_113b,VCS_70,6,2,218,-75,amoeba
+SAL_113b,VCS_80,6,2,197,-91,amoeba
+SAL_113b,VCS_90,6,2,258,-114,amoeba
+SAL_113b,VCS_170,6,3,-89,47,bread
+SAL_113b,VCS_180,6,3,-95,64,bread
+SAL_113b,VCS_190,6,3,-81,51,bread
+SAL_113b,VCS_200,6,3,-85,56,bread
+SAL_113b,VCS_210,6,3,-65,40,bread
+SAL_113b,VCS_20,6,4,400,162,jacks
+SAL_113b,VCS_30,6,4,397,169,jacks
+SAL_113b,VCS_40,6,4,415,168,jacks
+SAL_113b,VCS_50,6,4,411,168,jacks
+SAL_113b,VCS_220,6,5,439,43,idk
+SAL_113b,VCS_230,6,5,487,66,idk
+SAL_113b,VCS_250,6,5,477,38,idk
+SAL_113b,VCS_240,6,6,-396,228,stars
+SAL_113b,VCS_260,6,6,-385,218,stars
+SAL_113b,VCS_270,6,6,-399,236,stars
+SAL_113b,VCS_280,6,6,-397,214,stars
+SAL_113b,VCS_290,6,6,-410,218,stars
+SAL_113b,VCS_300,6,6,-398,230,stars
+SAL_113b,VCS_310,6,6,-393,213,stars
+SAL_114b,VCS_10,4,1,-317,114,four spikes
+SAL_114b,VCS_20,4,1,-232,166,four spikes
+SAL_114b,VCS_30,4,1,-296,168,four spikes
+SAL_114b,VCS_310,4,1,-146,101,four spikes
+SAL_114b,VCS_320,4,1,-191,204,four spikes
+SAL_114b,VCS_330,4,1,-169,149,four spikes
+SAL_114b,VCS_340,4,1,-215,117,four spikes
+SAL_114b,VCS_350,4,1,-247,70,four spikes
+SAL_114b,VCS_360,4,1,-299,57,four spikes
+SAL_114b,VCS_40,4,1,-269,116,four spikes
+SAL_114b,VCS_50,4,1,-185,69,four spikes
+SAL_114b,VCS_100,4,2,241,155,blob
+SAL_114b,VCS_110,4,2,296,175,blob
+SAL_114b,VCS_120,4,2,190,213,blob
+SAL_114b,VCS_130,4,2,376,236,blob
+SAL_114b,VCS_60,4,2,188,157,blob
+SAL_114b,VCS_70,4,2,357,172,blob
+SAL_114b,VCS_80,4,2,323,230,blob
+SAL_114b,VCS_90,4,2,249,221,blob
+SAL_114b,VCS_140,4,3,-404,-86,square blob
+SAL_114b,VCS_150,4,3,-338,-82,square blob
+SAL_114b,VCS_160,4,3,-414,-156,square blob
+SAL_114b,VCS_170,4,3,-460,-215,square blob
+SAL_114b,VCS_180,4,3,-463,-12,square blob
+SAL_114b,VCS_190,4,3,-375,-218,square blob
+SAL_114b,VCS_200,4,3,-458,-85,square blob
+SAL_114b,VCS_210,4,3,-523,-78,square blob
+SAL_114b,VCS_220,4,3,-495,-143,square blob
+SAL_114b,VCS_230,4,3,-348,-139,square blob
+SAL_114b,VCS_240,4,4,102,-54,more star shaped
+SAL_114b,VCS_250,4,4,163,-38,more star shaped
+SAL_114b,VCS_260,4,4,119,11,more star shaped
+SAL_114b,VCS_270,4,4,56,-6,more star shaped
+SAL_114b,VCS_280,4,4,153,-103,more star shaped
+SAL_114b,VCS_290,4,4,86,-113,more star shaped
+SAL_114b,VCS_300,4,4,38,-70,more star shaped
+SAL_115b,VCS_10,2,1,-185,225,somewhat cross shape
+SAL_115b,VCS_100,2,1,-159,-128,NA
+SAL_115b,VCS_110,2,1,-169,-42,NA
+SAL_115b,VCS_120,2,1,-322,-108,NA
+SAL_115b,VCS_130,2,1,-237,-104,NA
+SAL_115b,VCS_140,2,1,-338,-37,NA
+SAL_115b,VCS_20,2,1,-331,258,somewhat cross shape
+SAL_115b,VCS_30,2,1,-316,186,somewhat cross shape
+SAL_115b,VCS_320,2,1,-337,119,somewhat cross shape
+SAL_115b,VCS_330,2,1,-261,171,somewhat cross shape
+SAL_115b,VCS_340,2,1,-419,238,somewhat cross shape
+SAL_115b,VCS_350,2,1,-239,217,somewhat cross shape
+SAL_115b,VCS_360,2,1,-196,153,somewhat cross shape
+SAL_115b,VCS_40,2,1,-381,163,somewhat cross shape
+SAL_115b,VCS_50,2,1,-265,105,somewhat cross shape
+SAL_115b,VCS_60,2,1,-397,92,somewhat cross shape
+SAL_115b,VCS_70,2,1,-259,-24,NA
+SAL_115b,VCS_80,2,1,-279,259,somewhat cross shape
+SAL_115b,VCS_90,2,1,-409,-109,NA
+SAL_115b,VCS_150,2,2,149,-119,lopsided jar shape
+SAL_115b,VCS_160,2,2,92,-113,lopsided jar shape
+SAL_115b,VCS_170,2,2,214,-126,lopsided jar shape
+SAL_115b,VCS_180,2,2,27,-197,lopsided jar shape
+SAL_115b,VCS_190,2,2,33,-119,lopsided jar shape
+SAL_115b,VCS_200,2,2,89,50,inverted pentagon shape
+SAL_115b,VCS_210,2,2,57,116,inverted pentagon shape
+SAL_115b,VCS_220,2,2,256,60,inverted pentagon shape
+SAL_115b,VCS_230,2,2,162,68,inverted pentagon shape
+SAL_115b,VCS_240,2,2,78,218,inverted pentagon shape
+SAL_115b,VCS_250,2,2,391,131,inverted pentagon shape
+SAL_115b,VCS_260,2,2,353,209,inverted pentagon shape
+SAL_115b,VCS_270,2,2,133,167,inverted pentagon shape
+SAL_115b,VCS_280,2,2,210,191,inverted pentagon shape
+SAL_115b,VCS_290,2,2,275,204,inverted pentagon shape
+SAL_115b,VCS_300,2,2,302,126,inverted pentagon shape
+SAL_115b,VCS_310,2,2,224,121,inverted pentagon shape
+SAL_116b,VCS_10,6,1,356,250,pointy blobs
+SAL_116b,VCS_20,6,1,353,257,pointy blobs
+SAL_116b,VCS_30,6,1,332,246,pointy blobs
+SAL_116b,VCS_40,6,1,335,252,pointy blobs
+SAL_116b,VCS_50,6,1,369,254,pointy blobs
+SAL_116b,VCS_100,6,2,269,-160,bunny ears
+SAL_116b,VCS_110,6,2,168,-136,bunny ears
+SAL_116b,VCS_120,6,2,197,-158,bunny ears
+SAL_116b,VCS_140,6,2,263,-185,bunny ears
+SAL_116b,VCS_60,6,2,201,-169,bunny ears
+SAL_116b,VCS_70,6,2,204,-172,bunny ears
+SAL_116b,VCS_80,6,2,247,-160,bunny ears
+SAL_116b,VCS_90,6,2,169,-136,bunny ears
+SAL_116b,VCS_130,6,3,-320,-140,blobs
+SAL_116b,VCS_150,6,3,-330,-145,blobs
+SAL_116b,VCS_160,6,3,-338,-134,blobs
+SAL_116b,VCS_170,6,3,-344,-173,blobs
+SAL_116b,VCS_180,6,3,-352,-151,blobs
+SAL_116b,VCS_190,6,3,-378,-161,blobs
+SAL_116b,VCS_200,6,3,-359,-168,blobs
+SAL_116b,VCS_210,6,4,-410,121,pentagons
+SAL_116b,VCS_220,6,4,-410,115,pentagons
+SAL_116b,VCS_230,6,4,-403,134,pentagons
+SAL_116b,VCS_240,6,5,-320,253,square stars
+SAL_116b,VCS_250,6,5,-343,296,square stars
+SAL_116b,VCS_260,6,5,-322,280,square stars
+SAL_116b,VCS_270,6,5,-287,255,square stars
+SAL_116b,VCS_280,6,5,-320,240,square stars
+SAL_116b,VCS_290,6,5,-308,227,square stars
+SAL_116b,VCS_300,6,5,-282,225,square stars
+SAL_116b,VCS_310,6,6,32,190,regular stars
+SAL_116b,VCS_320,6,6,62,180,regular stars
+SAL_116b,VCS_330,6,6,63,188,regular stars
+SAL_116b,VCS_340,6,6,85,172,regular stars
+SAL_116b,VCS_350,6,6,51,187,regular stars
+SAL_116b,VCS_360,6,6,56,179,regular stars
+SAL_117a,VCS_10,10,1,-375,240,round stars
+SAL_117a,VCS_20,10,1,-419,248,round stars
+SAL_117a,VCS_30,10,1,-315,221,round stars
+SAL_117a,VCS_350,10,1,-361,197,round stars
+SAL_117a,VCS_360,10,1,-461,256,round stars
+SAL_117a,VCS_100,10,2,-346,-20,bunnies
+SAL_117a,VCS_110,10,2,-405,-23,bunnies
+SAL_117a,VCS_90,10,2,-309,-35,bunnies
+SAL_117a,VCS_120,10,3,340,127,wide bunny
+SAL_117a,VCS_130,10,3,355,197,wide bunny
+SAL_117a,VCS_140,10,3,394,146,wide bunny
+SAL_117a,VCS_150,10,3,369,86,wide bunny
+SAL_117a,VCS_160,10,4,41,-225,round rectangle
+SAL_117a,VCS_170,10,4,82,-218,round rectangle
+SAL_117a,VCS_180,10,5,-270,320,round sides
+SAL_117a,VCS_190,10,5,-240,287,round sides
+SAL_117a,VCS_200,10,5,-187,263,round sides
+SAL_117a,VCS_210,10,6,-640,-75,five sides
+SAL_117a,VCS_220,10,6,-585,-76,five sides
+SAL_117a,VCS_230,10,6,-521,-88,five sides
+SAL_117a,VCS_240,10,7,575,-5,three star
+SAL_117a,VCS_250,10,7,538,88,three star
+SAL_117a,VCS_260,10,7,561,49,three star
+SAL_117a,VCS_270,10,7,506,2,three star
+SAL_117a,VCS_280,10,8,192,86,point stars
+SAL_117a,VCS_290,10,8,78,123,point stars
+SAL_117a,VCS_300,10,8,105,26,point stars
+SAL_117a,VCS_310,10,8,136,98,point stars
+SAL_117a,VCS_320,10,8,142,74,point stars
+SAL_117a,VCS_330,10,8,81,72,point stars
+SAL_117a,VCS_340,10,8,41,105,point stars
+SAL_117a,VCS_40,10,9,-226,-162,xs
+SAL_117a,VCS_50,10,9,-157,-160,xs
+SAL_117a,VCS_60,10,9,-200,-219,xs
+SAL_117a,VCS_70,10,10,437,-66,dif bunny
+SAL_117a,VCS_80,10,10,423,-106,dif bunny
+SAL_118b,VCS_10,2,1,399,-186,pointy
+SAL_118b,VCS_170,2,1,400,-175,pointy
+SAL_118b,VCS_200,2,1,392,-175,pointy
+SAL_118b,VCS_210,2,1,400,-183,pointy
+SAL_118b,VCS_220,2,1,390,-183,pointy
+SAL_118b,VCS_240,2,1,398,-179,pointy
+SAL_118b,VCS_250,2,1,395,-177,pointy
+SAL_118b,VCS_260,2,1,398,-185,pointy
+SAL_118b,VCS_270,2,1,402,-184,pointy
+SAL_118b,VCS_280,2,1,398,-183,pointy
+SAL_118b,VCS_290,2,1,397,-179,pointy
+SAL_118b,VCS_300,2,1,400,-191,pointy
+SAL_118b,VCS_310,2,1,404,-187,pointy
+SAL_118b,VCS_320,2,1,391,-176,pointy
+SAL_118b,VCS_330,2,1,410,-185,pointy
+SAL_118b,VCS_340,2,1,395,-180,pointy
+SAL_118b,VCS_350,2,1,391,-182,pointy
+SAL_118b,VCS_360,2,1,397,-179,pointy
+SAL_118b,VCS_100,2,2,-357,-35,round
+SAL_118b,VCS_110,2,2,-331,-34,round
+SAL_118b,VCS_120,2,2,-314,-67,round
+SAL_118b,VCS_130,2,2,-358,-32,round
+SAL_118b,VCS_140,2,2,-328,-26,round
+SAL_118b,VCS_150,2,2,-327,-58,round
+SAL_118b,VCS_160,2,2,-348,-22,round
+SAL_118b,VCS_180,2,2,-325,-66,round
+SAL_118b,VCS_190,2,2,-350,-27,round
+SAL_118b,VCS_20,2,2,-335,-10,round
+SAL_118b,VCS_230,2,2,-348,-46,round
+SAL_118b,VCS_30,2,2,-310,-34,round
+SAL_118b,VCS_40,2,2,-315,-24,round
+SAL_118b,VCS_50,2,2,-326,-28,round
+SAL_118b,VCS_60,2,2,-337,-37,round
+SAL_118b,VCS_70,2,2,-334,-33,round
+SAL_118b,VCS_80,2,2,-316,-24,round
+SAL_118b,VCS_90,2,2,-320,-52,round
+SAL_119b,VCS_10,5,1,426,71,x
+SAL_119b,VCS_20,5,1,381,27,x
+SAL_119b,VCS_30,5,1,393,73,x
+SAL_119b,VCS_330,5,1,395,53,x
+SAL_119b,VCS_340,5,1,377,16,x
+SAL_119b,VCS_350,5,1,434,20,x
+SAL_119b,VCS_360,5,1,386,66,x
+SAL_119b,VCS_40,5,1,414,53,x
+SAL_119b,VCS_50,5,1,381,61,x
+SAL_119b,VCS_60,5,1,355,62,x
+SAL_119b,VCS_100,5,2,119,-9,blob
+SAL_119b,VCS_110,5,2,101,-61,blob
+SAL_119b,VCS_120,5,2,161,-75,blob
+SAL_119b,VCS_130,5,2,97,-13,blob
+SAL_119b,VCS_70,5,2,148,-25,blob
+SAL_119b,VCS_80,5,2,107,-46,blob
+SAL_119b,VCS_90,5,2,120,-61,blob
+SAL_119b,VCS_140,5,3,-225,-370,pentagon
+SAL_119b,VCS_210,5,3,-86,-190,pentagon
+SAL_119b,VCS_220,5,3,-107,-193,pentagon
+SAL_119b,VCS_230,5,3,-144,-196,pentagon
+SAL_119b,VCS_240,5,3,-45,-199,pentagon
+SAL_119b,VCS_150,5,4,-512,-72,curvy rectangle
+SAL_119b,VCS_160,5,4,-515,-71,curvy rectangle
+SAL_119b,VCS_170,5,4,-510,-68,curvy rectangle
+SAL_119b,VCS_180,5,4,-486,-70,curvy rectangle
+SAL_119b,VCS_190,5,4,-507,-69,curvy rectangle
+SAL_119b,VCS_200,5,4,-523,-71,curvy rectangle
+SAL_119b,VCS_250,5,5,-158,81,star
+SAL_119b,VCS_260,5,5,-189,65,star
+SAL_119b,VCS_270,5,5,-183,44,star
+SAL_119b,VCS_280,5,5,-215,37,star
+SAL_119b,VCS_290,5,5,-164,71,star
+SAL_119b,VCS_300,5,5,-258,79,star
+SAL_119b,VCS_310,5,5,-224,43,star
+SAL_119b,VCS_320,5,5,-217,92,star
+SAL_120b,VCS_10,3,1,-227,363,pointy star
+SAL_120b,VCS_20,3,1,-159,368,pointy star
+SAL_120b,VCS_200,3,1,129,186,pentagon thing
+SAL_120b,VCS_210,3,1,-97,183,pentagon thing
+SAL_120b,VCS_230,3,1,48,182,pentagon thing
+SAL_120b,VCS_240,3,1,-24,184,pentagon thing
+SAL_120b,VCS_30,3,1,286,371,pointy star
+SAL_120b,VCS_320,3,1,95,375,pointy star
+SAL_120b,VCS_330,3,1,162,370,pointy star
+SAL_120b,VCS_340,3,1,4,369,pointy star
+SAL_120b,VCS_350,3,1,233,368,pointy star
+SAL_120b,VCS_360,3,1,-96,371,pointy star
+SAL_120b,VCS_100,3,2,-314,88,curvy
+SAL_120b,VCS_110,3,2,-479,10,curvy
+SAL_120b,VCS_120,3,2,-425,80,curvy
+SAL_120b,VCS_130,3,2,-262,94,curvy
+SAL_120b,VCS_150,3,2,-421,12,curvy
+SAL_120b,VCS_250,3,2,-408,-156,pointy pentagon
+SAL_120b,VCS_270,3,2,-261,-157,pointy pentagon
+SAL_120b,VCS_290,3,2,-339,-155,pointy pentagon
+SAL_120b,VCS_300,3,2,-188,-151,pointy pentagon
+SAL_120b,VCS_310,3,2,-121,-152,pointy pentagon
+SAL_120b,VCS_40,3,2,-202,13,curvy
+SAL_120b,VCS_50,3,2,-251,14,curvy
+SAL_120b,VCS_60,3,2,-363,13,curvy
+SAL_120b,VCS_70,3,2,-310,12,curvy
+SAL_120b,VCS_80,3,2,-369,85,curvy
+SAL_120b,VCS_90,3,2,-478,82,curvy
+SAL_120b,VCS_140,3,3,424,-26,rounded pentagon
+SAL_120b,VCS_160,3,3,235,-22,rounded pentagon
+SAL_120b,VCS_170,3,3,364,-25,rounded pentagon
+SAL_120b,VCS_180,3,3,164,-22,rounded pentagon
+SAL_120b,VCS_190,3,3,306,-21,rounded pentagon
+SAL_120b,VCS_220,3,3,205,186,pentagon thing
+SAL_120b,VCS_260,3,3,20,-148,pointy pentagon
+SAL_120b,VCS_280,3,3,-43,-153,pointy pentagon
+SAL_121b,VCS_10,7,1,-530,-229,x
+SAL_121b,VCS_30,7,1,-589,-228,x
+SAL_121b,VCS_350,7,1,-539,-276,x
+SAL_121b,VCS_360,7,1,-590,-279,x
+SAL_121b,VCS_100,7,2,-490,-46,tooth
+SAL_121b,VCS_110,7,2,-576,-68,tooth
+SAL_121b,VCS_120,7,2,-532,-77,tooth
+SAL_121b,VCS_130,7,2,-505,8,tooth
+SAL_121b,VCS_80,7,2,-579,-10,tooth
+SAL_121b,VCS_90,7,2,-542,-27,tooth
+SAL_121b,VCS_140,7,3,166,165,badge
+SAL_121b,VCS_150,7,3,236,166,badge
+SAL_121b,VCS_160,7,3,152,77,badge
+SAL_121b,VCS_170,7,3,281,77,badge
+SAL_121b,VCS_180,7,3,260,10,badge
+SAL_121b,VCS_190,7,3,204,119,badge
+SAL_121b,VCS_20,7,4,-270,-229,curved x
+SAL_121b,VCS_40,7,4,-432,-335,curved x
+SAL_121b,VCS_50,7,4,-277,-283,curved x
+SAL_121b,VCS_60,7,4,-384,-326,curved x
+SAL_121b,VCS_70,7,4,-340,-298,curved x
+SAL_121b,VCS_200,7,5,75,-370,pentagon
+SAL_121b,VCS_210,7,5,0,-370,pentagon
+SAL_121b,VCS_220,7,5,53,-311,pentagon
+SAL_121b,VCS_230,7,5,173,-277,pentagon
+SAL_121b,VCS_240,7,5,109,-322,pentagon
+SAL_121b,VCS_250,7,6,-272,-86,star square
+SAL_121b,VCS_260,7,6,-236,-44,star square
+SAL_121b,VCS_270,7,6,-250,15,star square
+SAL_121b,VCS_280,7,6,-304,-5,star square
+SAL_121b,VCS_290,7,6,-325,-66,star square
+SAL_121b,VCS_300,7,6,-286,55,star square
+SAL_121b,VCS_310,7,6,-336,30,star square
+SAL_121b,VCS_320,7,7,-410,109,star
+SAL_121b,VCS_330,7,7,-376,146,star
+SAL_121b,VCS_340,7,7,-433,180,star
+SAL_122b,VCS_10,10,1,-513,352,smaller half star
+SAL_122b,VCS_20,10,1,-507,359,smaller half star
+SAL_122b,VCS_30,10,1,-508,360,smaller half star
+SAL_122b,VCS_300,10,1,-589,309,smaller half star
+SAL_122b,VCS_310,10,1,-592,303,smaller half star
+SAL_122b,VCS_100,10,2,219,-369,tooth
+SAL_122b,VCS_110,10,2,225,-370,tooth
+SAL_122b,VCS_180,10,2,266,-212,bigger vase
+SAL_122b,VCS_190,10,2,266,-209,bigger vase
+SAL_122b,VCS_120,10,3,-639,77,vase
+SAL_122b,VCS_130,10,3,-634,59,vase
+SAL_122b,VCS_140,10,3,-621,66,vase
+SAL_122b,VCS_150,10,4,-315,399,bigger vase
+SAL_122b,VCS_160,10,4,-306,388,bigger vase
+SAL_122b,VCS_170,10,4,-309,398,bigger vase
+SAL_122b,VCS_200,10,5,-640,-298,wider pentagon shape
+SAL_122b,VCS_210,10,5,-640,-315,wider pentagon shape
+SAL_122b,VCS_350,10,5,-616,-174,star
+SAL_122b,VCS_360,10,5,-611,-176,star
+SAL_122b,VCS_220,10,6,157,366,pentagon type shape
+SAL_122b,VCS_230,10,6,157,368,pentagon type shape
+SAL_122b,VCS_40,10,6,90,195,star
+SAL_122b,VCS_50,10,6,67,188,star
+SAL_122b,VCS_60,10,6,86,192,star
+SAL_122b,VCS_70,10,6,90,190,star
+SAL_122b,VCS_240,10,7,436,-338,half star
+SAL_122b,VCS_250,10,7,443,-343,half star
+SAL_122b,VCS_260,10,8,-300,-370,medium sized half star
+SAL_122b,VCS_270,10,8,-306,-368,medium sized half star
+SAL_122b,VCS_280,10,8,-302,-373,medium sized half star
+SAL_122b,VCS_290,10,8,-302,-374,medium sized half star
+SAL_122b,VCS_320,10,9,490,324,pointing star
+SAL_122b,VCS_330,10,9,514,321,pointing star
+SAL_122b,VCS_340,10,9,526,299,pointing star
+SAL_122b,VCS_80,10,10,641,-227,skinny vase
+SAL_122b,VCS_90,10,10,640,-225,skinny vase
+SAL_123b,VCS_10,4,1,253,155,diamond or stars
+SAL_123b,VCS_20,4,1,323,90,diamond or stars
+SAL_123b,VCS_30,4,1,385,126,diamond or stars
+SAL_123b,VCS_310,4,1,429,-4,diamond or stars
+SAL_123b,VCS_320,4,1,392,42,diamond or stars
+SAL_123b,VCS_330,4,1,431,82,diamond or stars
+SAL_123b,VCS_340,4,1,195,109,diamond or stars
+SAL_123b,VCS_350,4,1,351,-6,diamond or stars
+SAL_123b,VCS_360,4,1,311,31,diamond or stars
+SAL_123b,VCS_40,4,1,328,162,diamond or stars
+SAL_123b,VCS_50,4,1,260,82,diamond or stars
+SAL_123b,VCS_60,4,1,384,196,diamond or stars
+SAL_123b,VCS_100,4,2,175,-182,shield
+SAL_123b,VCS_110,4,2,110,-231,shield
+SAL_123b,VCS_120,4,2,55,-194,shield
+SAL_123b,VCS_130,4,2,5,-156,shield
+SAL_123b,VCS_140,4,2,64,-130,shield
+SAL_123b,VCS_150,4,2,51,-277,shield
+SAL_123b,VCS_160,4,2,-6,-228,shield
+SAL_123b,VCS_70,4,2,127,-163,shield
+SAL_123b,VCS_80,4,2,177,-247,shield
+SAL_123b,VCS_90,4,2,122,-290,shield
+SAL_123b,VCS_170,4,3,-247,-313,round and straight
+SAL_123b,VCS_180,4,3,-329,-305,round and straight
+SAL_123b,VCS_190,4,3,-240,-242,round and straight
+SAL_123b,VCS_200,4,3,-323,-231,round and straight
+SAL_123b,VCS_210,4,4,-280,145,polygon
+SAL_123b,VCS_220,4,4,-328,214,polygon
+SAL_123b,VCS_230,4,4,-254,219,polygon
+SAL_123b,VCS_240,4,4,-363,144,polygon
+SAL_123b,VCS_250,4,4,-216,167,polygon
+SAL_123b,VCS_260,4,4,-173,108,polygon
+SAL_123b,VCS_270,4,4,-148,170,polygon
+SAL_123b,VCS_280,4,4,-246,71,polygon
+SAL_123b,VCS_290,4,4,-334,62,polygon
+SAL_123b,VCS_300,4,4,-187,40,polygon
+SAL_124b,VCS_10,4,1,297,-259,four point
+SAL_124b,VCS_20,4,1,219,-315,four point
+SAL_124b,VCS_220,4,1,260,-67,four point
+SAL_124b,VCS_30,4,1,338,-312,four point
+SAL_124b,VCS_340,4,1,225,-370,four point
+SAL_124b,VCS_350,4,1,230,-201,four point
+SAL_124b,VCS_360,4,1,234,-252,four point
+SAL_124b,VCS_40,4,1,166,-258,four point
+SAL_124b,VCS_50,4,1,274,-311,four point
+SAL_124b,VCS_60,4,1,354,-249,four point
+SAL_124b,VCS_100,4,2,-325,236,guitar
+SAL_124b,VCS_110,4,2,-357,153,guitar
+SAL_124b,VCS_120,4,2,-196,155,guitar
+SAL_124b,VCS_130,4,2,-283,159,guitar
+SAL_124b,VCS_140,4,2,-128,155,guitar
+SAL_124b,VCS_150,4,2,-208,248,guitar
+SAL_124b,VCS_70,4,2,-265,239,guitar
+SAL_124b,VCS_80,4,2,-390,232,guitar
+SAL_124b,VCS_90,4,2,-150,234,guitar
+SAL_124b,VCS_160,4,3,-241,-188,fat
+SAL_124b,VCS_170,4,3,-398,-161,fat
+SAL_124b,VCS_180,4,3,-314,-179,fat
+SAL_124b,VCS_190,4,3,-331,-94,fat
+SAL_124b,VCS_200,4,3,-450,-55,fat
+SAL_124b,VCS_210,4,3,-279,-101,fat
+SAL_124b,VCS_230,4,3,-368,-28,fat
+SAL_124b,VCS_240,4,3,-279,-24,fat
+SAL_124b,VCS_250,4,4,150,68,standing up
+SAL_124b,VCS_260,4,4,93,182,standing up
+SAL_124b,VCS_270,4,4,182,5,standing up
+SAL_124b,VCS_280,4,4,46,126,standing up
+SAL_124b,VCS_290,4,4,34,30,standing up
+SAL_124b,VCS_300,4,4,-16,72,standing up
+SAL_124b,VCS_310,4,4,109,12,standing up
+SAL_124b,VCS_320,4,4,127,121,standing up
+SAL_124b,VCS_330,4,4,89,63,standing up
+SAL_125a,VCS_10,6,1,-317,65,four points
+SAL_125a,VCS_320,6,1,-269,183,four points
+SAL_125a,VCS_330,6,1,-397,128,four points
+SAL_125a,VCS_340,6,1,-352,104,four points
+SAL_125a,VCS_350,6,1,-323,158,four points
+SAL_125a,VCS_360,6,1,-286,112,four points
+SAL_125a,VCS_100,6,2,186,118,concave top
+SAL_125a,VCS_110,6,2,290,162,concave top
+SAL_125a,VCS_120,6,2,226,169,concave top
+SAL_125a,VCS_140,6,2,347,166,concave top
+SAL_125a,VCS_80,6,2,255,105,concave top
+SAL_125a,VCS_90,6,2,338,92,concave top
+SAL_125a,VCS_130,6,3,-432,-189,round top
+SAL_125a,VCS_150,6,3,-479,-138,round top
+SAL_125a,VCS_160,6,3,-402,-113,round top
+SAL_125a,VCS_170,6,3,-473,-42,round top
+SAL_125a,VCS_180,6,3,-369,-178,round top
+SAL_125a,VCS_190,6,4,359,-211,pointed top
+SAL_125a,VCS_200,6,4,341,-133,pointed top
+SAL_125a,VCS_210,6,4,282,-183,pointed top
+SAL_125a,VCS_220,6,4,431,-160,pointed top
+SAL_125a,VCS_20,6,5,117,-54,concave sides
+SAL_125a,VCS_30,6,5,129,-121,concave sides
+SAL_125a,VCS_40,6,5,19,-105,concave sides
+SAL_125a,VCS_50,6,5,74,-113,concave sides
+SAL_125a,VCS_60,6,5,-2,-54,concave sides
+SAL_125a,VCS_70,6,5,60,-50,concave sides
+SAL_125a,VCS_230,6,6,-142,110,three points
+SAL_125a,VCS_240,6,6,-96,170,three points
+SAL_125a,VCS_250,6,6,-73,104,three points
+SAL_125a,VCS_260,6,6,21,208,three points
+SAL_125a,VCS_270,6,6,-30,154,three points
+SAL_125a,VCS_280,6,6,11,275,three points
+SAL_125a,VCS_290,6,6,-104,258,three points
+SAL_125a,VCS_300,6,6,-49,231,three points
+SAL_125a,VCS_310,6,6,12,97,three points
+SAL_128b,VCS_10,9,1,272,-25,ninja star
+SAL_128b,VCS_20,9,1,264,-23,ninja star
+SAL_128b,VCS_360,9,1,260,-55,ninja star
+SAL_128b,VCS_100,9,2,-382,76,dress
+SAL_128b,VCS_110,9,2,-418,84,dress
+SAL_128b,VCS_120,9,2,-353,93,dress
+SAL_128b,VCS_130,9,2,-367,52,dress
+SAL_128b,VCS_140,9,2,-348,98,dress
+SAL_128b,VCS_80,9,2,-335,99,dress
+SAL_128b,VCS_90,9,2,-392,91,dress
+SAL_128b,VCS_150,9,3,-31,206,bathing suit
+SAL_128b,VCS_160,9,3,-58,211,bathing suit
+SAL_128b,VCS_170,9,3,-36,191,bathing suit
+SAL_128b,VCS_180,9,4,214,206,bread loaf
+SAL_128b,VCS_190,9,4,198,214,bread loaf
+SAL_128b,VCS_200,9,4,226,213,bread loaf
+SAL_128b,VCS_210,9,5,-162,312,pentagon
+SAL_128b,VCS_220,9,5,-162,330,pentagon
+SAL_128b,VCS_230,9,5,-150,370,pentagon
+SAL_128b,VCS_240,9,5,-158,355,pentagon
+SAL_128b,VCS_250,9,6,-476,-248,punching dummy
+SAL_128b,VCS_270,9,6,-440,-277,punching dummy
+SAL_128b,VCS_280,9,6,-472,-291,punching dummy
+SAL_128b,VCS_290,9,6,-465,-299,punching dummy
+SAL_128b,VCS_300,9,6,-469,-301,punching dummy
+SAL_128b,VCS_320,9,6,-475,-278,punching dummy
+SAL_128b,VCS_260,9,7,-49,-213,star
+SAL_128b,VCS_310,9,7,-52,-231,star
+SAL_128b,VCS_330,9,7,-65,-238,star
+SAL_128b,VCS_340,9,7,-45,-234,star
+SAL_128b,VCS_350,9,7,-58,-237,star
+SAL_128b,VCS_30,9,8,-245,-331,fidget spinner
+SAL_128b,VCS_50,9,8,-253,-339,fidget spinner
+SAL_128b,VCS_40,9,9,187,78,starfish
+SAL_128b,VCS_60,9,9,152,60,starfish
+SAL_128b,VCS_70,9,9,166,60,starfish
+SAL_129b,VCS_10,9,1,85,-137,rounded star
+SAL_129b,VCS_20,9,1,88,-200,rounded star
+SAL_129b,VCS_30,9,1,141,-114,rounded star
+SAL_129b,VCS_40,9,1,142,-169,rounded star
+SAL_129b,VCS_50,9,1,196,-126,rounded star
+SAL_129b,VCS_60,9,1,197,-185,rounded star
+SAL_129b,VCS_100,9,2,-437,114,rounded hourglass
+SAL_129b,VCS_110,9,2,-464,185,rounded hourglass
+SAL_129b,VCS_120,9,2,-407,189,rounded hourglass
+SAL_129b,VCS_70,9,2,-524,180,rounded hourglass
+SAL_129b,VCS_80,9,2,-496,116,rounded hourglass
+SAL_129b,VCS_90,9,2,-558,100,rounded hourglass
+SAL_129b,VCS_130,9,3,-264,226,hourglass
+SAL_129b,VCS_140,9,3,-205,113,hourglass
+SAL_129b,VCS_150,9,3,-265,156,hourglass
+SAL_129b,VCS_160,9,3,-204,189,hourglass
+SAL_129b,VCS_170,9,4,270,-12,hourglass hexagon
+SAL_129b,VCS_180,9,4,197,14,hourglass hexagon
+SAL_129b,VCS_190,9,5,277,112,round hexagon
+SAL_129b,VCS_200,9,5,271,189,round hexagon
+SAL_129b,VCS_210,9,5,341,155,round hexagon
+SAL_129b,VCS_220,9,6,-2,182,hexagon
+SAL_129b,VCS_230,9,6,44,125,hexagon
+SAL_129b,VCS_240,9,7,-235,-14,star hexagon
+SAL_129b,VCS_250,9,7,-266,-86,star hexagon
+SAL_129b,VCS_260,9,7,-216,-137,star hexagon
+SAL_129b,VCS_270,9,7,-307,-26,star hexagon
+SAL_129b,VCS_280,9,7,-334,-98,star hexagon
+SAL_129b,VCS_290,9,7,-287,-154,star hexagon
+SAL_129b,VCS_300,9,8,-56,-12,star
+SAL_129b,VCS_310,9,8,-95,-60,star
+SAL_129b,VCS_320,9,8,-31,-67,star
+SAL_129b,VCS_330,9,8,4,-26,star
+SAL_129b,VCS_340,9,9,357,-119,inbetween star
+SAL_129b,VCS_350,9,9,419,-132,inbetween star
+SAL_129b,VCS_360,9,9,387,-173,inbetween star
