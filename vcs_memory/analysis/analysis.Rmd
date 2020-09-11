@@ -1,0 +1,136 @@
+---
+title: "VCS MEMORY"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+library(cowplot)
+theme_set(theme_cowplot())
+
+resp_data <- read.csv(here("..","processed_data","vcs_memory_resp_data_anon_v1.csv"))
+
+```
+
+## SUMMARIZE SUBJECT LEVEL DATA
+
+```{r, warning=F, message=F}
+#### summarize subject-level data
+subj_response <- resp_data%>%
+  group_by(subject,trial_kind,list_id,rotation_start) %>%
+  summarize(n=n(),
+            outlier_resp=sum(diff_response>60),
+            mean_diff=mean(diff_response), 
+            mean_abs_diff=mean(abs(diff_response)),
+            median_diff=median(diff_response),
+            median_abs_diff=median(abs(diff_response)),
+            mean_rt=mean(rt),
+            median_rt=median(rt),
+            exclude=exclude[1])
+
+subj_response  %>%
+  arrange(subject,trial_kind) %>%
+  DT::datatable()
+```
+
+###  Handle participant-level and trial-level exclusions
+
+Excluding 9 participants who havea disproportionate number of apparently random responses.
+
+```{r, warning=F, message=F}
+#exclude participants
+resp_data_exclusions <- resp_data %>%
+  filter(exclude=="n")
+subj_response_clean <- subj_response %>%
+  filter(exclude=="n")
+```
+
+Excluding outlier trials (>60 degree difference). About `r round(mean(abs(resp_data_exclusions$diff_response)>60),4)*100`% of remaining trials.
+
+``` {r}
+#exclude responses over 60 (~3%)
+resp_data_clean <- resp_data_exclusions %>%
+  filter(abs(diff_response)<=60)
+```
+
+
+## DESCRIPTIVE PLOTS  {.tabset}
+
+### Difference in Response (All Trials)
+
+Difference in response from target shape for all trials, with smoothed fit across all data.
+
+```{r, warning=F, message=F}
+ggplot(resp_data_clean,aes(x=correct_response,y=diff_response))+
+  geom_jitter(alpha=0.15)+
+  geom_hline(yintercept=0,size=1.2,color="firebrick")+
+  geom_smooth()+
+  facet_wrap(~trial_kind)
+ggsave(here("figures","vcs_memory_difference_response.pdf"), width=9,  height=6)
+```
+
+### Histogram in response frequency by item/ shape
+
+``` {r, warning=F, message=F}
+summarize_response_location <- resp_data %>%
+  count(trial_kind,response)
+
+ggplot(summarize_response_location,aes(response,n))+
+  geom_histogram(stat="identity")+
+  #geom_vline(xintercept=seq(0,360,10),color="red")+
+  facet_wrap(~trial_kind)
+```
+
+## Item-Wise Analysis
+
+Average response bias by item/ shape
+
+```{r, warning=F, message=F}
+#### item-wise analysis ####
+item_response <- resp_data_clean %>%
+  group_by(correct_response,trial_kind) %>%
+  summarize(
+    N=n(),
+    mean_diff=mean(diff_response),
+    sd_diff=sd(diff_response),
+    mean_abs_diff=mean(abs(diff_response)),
+    sd_abs_diff=sd(abs(diff_response)),
+    simpson_diversity=simpson_diversity[1],
+    modal_agreement=modal_agreement[1],
+    modal_response_agreement=modal_response_agreement[1],
+  )
+
+ggplot(item_response,aes(correct_response,mean_diff))+
+  geom_point()+
+  geom_smooth(method="gam")+
+  #geom_smooth(aes(y=sd_diff),color="red")+
+  geom_line(aes(y=modal_agreement*10),col="red")+
+  #geom_line(aes(y=modal_response_agreement*10),col="purple")+
+  geom_line(aes(y=simpson_diversity*10),col="green")+
+  facet_wrap(~trial_kind)
+```
+
+Smoothing in the plot uses GAMS. 
+The colored lines indicate various measures of nameability (scaled up for visibility on the y-axis). 
+
+Red = Modal Agreement.
+
+Green = Simpson Diversity.
+
+### Response Difference By Start Value
+
+```{r, warning=F, message=F}
+ggplot(filter(resp_data_clean,trial_kind=="delayed"&abs(diff_response)<30),aes(x=start_value,y=diff_response))+
+  geom_jitter(alpha=0.15)+
+  geom_hline(yintercept=0,size=1.2,color="firebrick")+
+  geom_smooth(method="loess")+
+  geom_vline(aes(xintercept=correct_response))+
+  facet_wrap(~correct_response)
+```
+

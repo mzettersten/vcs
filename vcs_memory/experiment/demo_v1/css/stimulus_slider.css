@@ -1,0 +1,49 @@
+#slider {
+	/*position: relative;*/
+	position: absolute;
+	z-index: 2;
+	/*top:-360px; 
+	left:0px;*/
+	left: 600px;
+	top:100px;
+}
+
+.rs-control .rs-bg-color {
+    background-color: transparent;
+}
+
+.rs-inner {
+    background-color: transparent
+}
+
+.rs-control .rs-path-color {
+    background-color: transparent;
+}
+
+.rs-border {
+	background-color: transparent;
+}
+
+.rs-control .rs-handle {
+   /*background-color: #a9a9a9;*/
+   background-color: #36454f; 
+}
+
+.rs-svg-mode .rs-border {
+    /*  this will change the slider's border color
+        this can be also done via the property -> 'borderColor'
+        the border width can be changed via the property -> 'borderWidth'  */
+    stroke: #AAAAAA;
+}
+
+
+
+#slider_stimulus_id {
+	position: absolute;
+	z-index: 1;
+	
+}
+
+.rs-disabled {
+    opacity: 0;
+}

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>                        
+	
+	<!-- <script src="https://cdn.jsdelivr.net/npm/round-slider@1.4.1/dist/roundslider.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/round-slider@1.4.1/dist/roundslider.min.css" rel="stylesheet" />  -->
+	<script src="roundSlider-1.4.1/src/roundslider.js"></script>
+	<link rel="stylesheet" href="slider.css"></link>
+	<link rel="stylesheet" href="roundSlider-1.4.1/src/roundslider.css"></link>
+	
+</head>
+<body>
+
+	<img id="image" src="images/VCS_1.png" STYLE="position:absolute; top:220px; left:220px; z-index: 1;">
+	<div id="slider"></div>
+</body>
+<script>
+	
+	$("#slider").roundSlider(
+		{
+			max: 359,
+			min: 0,
+			sliderType: "default",
+			editableTooltip: false,
+			radius: 300,
+			width: "10",
+			startValue: 0,
+			handleShape: "round",
+			handleSize: "+15",
+			showTooltip: false,
+			//tooltipFormat: "tooltipVal",
+			drag: function (args) {
+				if (args.value == 0) {
+					image_name = "images/VCS_".concat("360",".png");
+				} else {
+					image_name = "images/VCS_".concat(args.value,".png");
+				}
+				console.log(image_name);
+				document.getElementById("image").src=image_name;
+			}
+		}
+	);
+	
+	
+</script>
+</html>

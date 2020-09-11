@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jspsych-6.1.0/jspsych.js"></script>
+  <script src="js/jspsych-image-roundslider-response-dynamic.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>  
+<script src="js/roundSlider-1.4.1/src/roundslider.js"></script>
+<link rel="stylesheet" href="js/roundSlider-1.4.1/src/roundslider.css"></link>
+
+<link rel="stylesheet" href="css/slider.css"></link>
+  <link rel="stylesheet" href="js/jspsych-6.1.0/css/jspsych.css"></link>
+  <style>
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body></body>
+<script>
+
+  var trial_1 = {
+    type: 'image-roundslider-response-dynamic',
+    stimulus: 'images/VCS_90.png',
+	  stimulus_base: 'images/VCS_',
+    labels: ['1', '360'],
+	  min: 1,
+	  max: 360,
+    slider_radius: 200,
+	  start: 90,
+	  no_slider: true,
+    require_movement: false,
+    prompt: '<p>Adjust the image</p>'
+  }
+  
+  var trial_2 = {
+    type: 'image-roundslider-response-dynamic',
+    stimulus: 'images/VCS_90.png',
+	  stimulus_base: 'images/VCS_',
+    labels: ['1', '360'],
+	  min: 1,
+	  max: 360,
+    slider_radius: 200,
+	  start: 90,
+	  no_slider: false,
+    require_movement: true,
+    prompt: '<p>Adjust the image</p>'
+  }
+
+  // var trial_2 = {
+  //   type: 'image-slider-response-dynamic',
+  //   stimulus: 'images/VCS_100.png',
+  // 	  stimulus_base: 'images/VCS_',
+  //   labels: ['1', '360'],
+  // 	   min: 1,
+  // 	  max: 360,
+  //   start: 100,
+  //   slider_width: 500,
+  //   prompt: '<p>Adjust the image</p>',
+  //   trial_duration: 5000
+  // }
+  //
+  // var trial_3 = {
+  //   type: 'image-slider-response-dynamic',
+  //   stimulus: 'images/VCS_180.png',
+  // 	  stimulus_base: 'images/VCS_',
+  //   labels: ['1', '360'],
+  // 	  min: 1,
+  // 	  max: 360,
+  // 	  start: 180,
+  //   slider_width: 500,
+  //   prompt: '<p>Adjust the image</p>',
+  //   //stimulus_duration: 1000
+  // }
+  
+  all_images = [];
+  
+  for(var j=1; j < 361; j++){
+	  all_images.push('images/VCS_'+j.toString()+'.png');
+  };
+  
+  console.log(all_images);
+
+  jsPsych.init({
+    timeline: [trial_1,trial_2],
+	  preload_images: all_images,
+	  show_preload_progress_bar: true,
+    on_finish: function() {
+      jsPsych.data.displayData();
+    },
+    default_iti: 0
+  });
+</script>
+
+</html>

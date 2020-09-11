@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/snap.svg-min.js"></script>
+  <script src="js/jspsych-6.1.0/jspsych.js"></script>
+  <script src="js/jspsych-stimulus-image-roundslider-response-dynamic.js"></script>
+  <script src="js/jspsych-6.1.0/plugins/jspsych-instructions.js"></script>
+  <script src="js/jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
+  <script src="js/jspsych-6.1.0/plugins/jspsych-survey-text.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>  
+<script src="js/roundSlider-1.4.1/src/roundslider.js"></script>
+<link rel="stylesheet" href="css/slider.css"></link>
+<link rel="stylesheet" href="js/roundSlider-1.4.1/src/roundslider.css"></link>
+  <link rel="stylesheet" href="js/jspsych-6.1.0/css/jspsych.css"></link>
+  <style>
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body></body>
+<script>
+	
+  // ORGANIZE SUBJECT ID & GENERAL PARAMETERS
+
+  // generate a random subject ID (just to be safe)
+  var subject_id = Math.floor(Math.random()*1000000);
+  subject_id="p"+subject_id.toString();
+  
+  var date = new Date();
+  var iso_date = date.toISOString();
+  
+  var subject_id_isodate = subject_id.concat("_",iso_date);
+  console.log(subject_id_isodate);
+
+  //general function for grabbing parameter from a URL
+  function getParamFromURL( name ) {
+  	name = name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+  	var regexS = "[\?&]"+name+"=([^&#]*)";
+  	var regex = new RegExp( regexS );
+  	var results = regex.exec( window.location.href );
+  	if( results == null )
+  		return "";
+  	else
+  		return results[1];
+  }
+
+  //save workerId if it is part of the survey URL ?id=
+  var workerId  = getParamFromURL( 'workerId' );
+  
+  //otherwise just use the randomly generated subject ID
+  if (workerId==="") {
+  	workerId=subject_id;
+  };
+  //make sure that nobody can enter anything damaging or crazy for workerId
+  workerId.replace(/[^A-Za-z0-9_]/g, "");
+  
+  //save qualtricsID if it is part of the survey URL ?qualtricsId=
+  var qualtricsId = getParamFromURL( 'qualtricsId' );
+  //otherwise just use the randomly generated subject ID
+  if (qualtricsId==="") {
+  	qualtricsId=subject_id;
+  };
+  //make sure that nobody can enter anything damaging or crazy for qualtricsId
+  qualtricsId.replace(/[^A-Za-z0-9_]/g, "");
+  
+  //save assignment_id if it is part of the survey URL ?id=
+  var assignmentId  = getParamFromURL( 'assignmentId' );
+  
+  //otherwise just use the randomly generated id
+  if (assignmentId==="") {
+  	assignmentId="";
+  };
+  //make sure that nobody can enter anything damaging or crazy for id
+  assignmentId.replace(/[^A-Za-z0-9_]/g, "");
+  
+  //save assignment_id if it is part of the survey URL ?id=
+  var hitId  = getParamFromURL( 'hitId' );
+  
+  //otherwise just use the randomly generated id
+  if (hitId==="") {
+  	hitId="";
+  };
+  //make sure that nobody can enter anything damaging or crazy for id
+  hitId.replace(/[^A-Za-z0-9_]/g, "");
+  
+  //get angle list
+  var list_id = getParamFromURL('list_id');
+  list_id.replace(/[^A-Za-z0-9_]/g, "");
+  list_id = parseInt(list_id);
+  // get rotation parameter
+  var rotation_start = getParamFromURL('ro_start');
+  rotation_start.replace(/[^A-Za-z0-9_]/g, "");
+  
+  //add to all trials
+  jsPsych.data.addProperties({
+	  subject: subject_id,
+	  workerId: workerId,
+	  qualtricsId: qualtricsId,
+	  assignmentId: assignmentId,
+	  hitId: hitId,
+	  iso_identifier: iso_date,
+	  list_id: list_id,
+	  rotation_start: rotation_start,
+  });
+  
+  //create roation list
+  var rotation_step_size = 6;
+  var rotation_length = 60;
+  var rotation_list = [];
+  if (rotation_start ==  "") {
+	  var start = 0;
+  } else {
+	  rotation_start = parseInt(rotation_start);
+	  var start=rotation_start;
+  }
+  for (var i=0; i < rotation_length; i++){
+	  rotation_list.push(start+i*rotation_step_size);
+  }
+  var shuffled_rotation_list = jsPsych.randomization.shuffle(rotation_list);
+  
+  var angle_list_1 = [10,40,70,100,130,160,190,220,250,280,310,340];
+  var angle_list_2 = [20,50,80,110,140,170,200,230,260,290,320,350];
+  var angle_list_3 = [30,60,90,120,150,180,210,240,270,300,330,360];
+  
+  if (list_id==1) {
+	  var cur_angle_list = angle_list_1;
+  } else if (list_id==2) {
+	  var cur_angle_list = angle_list_2;
+  } else if (list_id==3) {
+	  var cur_angle_list = angle_list_3;
+  }else {
+	  var cur_angle_list = jsPsych.randomization.shuffle([angle_list_1,angle_list_2,angle_list_3])[0];
+  }
+  
+  //create stimulus list
+  var stimulus_list=[];
+  for (var i=0; i < cur_angle_list.length; i++){
+	  stimulus_list.push('images/VCS_'+cur_angle_list[i].toString()+'.png');
+  };
+  
+  var timeline = [];
+  
+  
+  //var wheel_rotation
+  var fullscreen = {
+	  type: 'fullscreen',
+	  fullscreen_mode: true
+  };
+  
+  
+  var intro_instructions = {
+		type: 'instructions',
+		pages: [
+		        "Welcome to the experiment!<br><br>In this experiment, we will ask you to adjust a shape on the right until it matches a shape you saw on the left. You will use a round slider to adjust the shape until it matches the shape you saw. <b>Your goal is to adjust the image on the right so that it matches the shape on the left as closely as possible.</b><br><br>Please be aware that we will check your data for random responding. HITs with a high number of adjustments that are very, very far off from the target shape may be rejected. Don't worry: As long as you are doing your best to match the right shape to shapes you saw on the left, you should be accurate and your HIT will be accepted.<br><br>First, we will start with a few practice matching trials where the shape on the left stays on the screen. Then, you will do a number of matching trials where a shape will flash briefly on the left side and then disappear. There will be about 60 of these trials in total, which will take around 10 minutes. There will be an opportunity to take an (optional) short break halfway through the experiment. <br><br> Click next to begin.",
+			'Click next to begin the first set of trials. <b>Your goal is to adjust the image on the right so that it matches the shape on the left as closely as possible</b>. Use the black dot at the top of the circle to adjust the shape on the right until it matches the image on the left.'
+		    ],
+		    show_clickable_nav: true
+	}
+	
+	timeline.push(fullscreen,intro_instructions);
+	
+	var cur_angle_list_undelayed = jsPsych.randomization.shuffle(cur_angle_list);
+	
+	var undelayed_counter = 0;
+	var undelayed_num = 6;
+	var rotation_counter = 0;
+	
+	for (var cur_undelayed_index=0; cur_undelayed_index < undelayed_num; cur_undelayed_index++) {
+		
+		//rotate slider
+		var cur_rotation_adjustment = shuffled_rotation_list[rotation_counter];
+		var temp = (cur_rotation_adjustment+90)%360;
+		if (temp == 0) {
+			var cur_image_angle_start = 360;
+		} else {
+			var cur_image_angle_start = (cur_rotation_adjustment+90)%360;
+		}
+		var cur_start_stimulus = 'images/VCS_'+cur_image_angle_start.toString() + '.png'
+		
+		//determine current target stimulus
+		var cur_angle = cur_angle_list_undelayed[cur_undelayed_index]
+		var cur_stimulus = 'images/VCS_'+cur_angle.toString() + '.png'
+		
+	    var cur_undelayed_trial = {
+	      type: 'stimulus-image-roundslider-response-dynamic',
+			  stimulus: cur_stimulus,
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+	    //labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+		  no_slider: false,
+	    require_movement: true,
+			countdown_timer: false,
+	    prompt: '<p><b>Adjust the shape on the right to match the image on the left.</b> <br>Move the black dot along the circle to control the right shape. Then click the continue button.</p>',
+			data: { trial_kind:"undelayed",cur_block: 1, cur_trial:cur_undelayed_index+1,total_trial_num: cur_undelayed_index+1, phase: "response",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle, start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+	    }
+		
+		timeline.push(cur_undelayed_trial);
+		rotation_counter = rotation_counter+1;
+	};
+	
+    
+	
+	var delayed_instructions_1 = {
+		type: 'instructions',
+		pages: [
+		        'Great job! <br><br> On the next trials, a shape will flash briefly in the window on the left side of the screen. After a short (two-second) delay, we will ask you to adjust a second shape on the right to match the one you just saw. <b>Your goal is to adjust the image on the right so that it matches the shape you just saw on the left as closely as possible.</b> Use the black dot at the top of the circle to adjust the shape on the right until it matches the image you saw on the left.<br><br>You will complete a number of trials. Try your best to stay focused on each trial. Take a break if you feel yourself losing focus. You can track your progress in the entire experiment in the progress bar at the top of the screen. There will be a short break about halfway through the experiment.<br><br> Click next to begin.'
+		    ],
+		    show_clickable_nav: true
+	}
+	
+	timeline.push(delayed_instructions_1);
+	
+	
+	var block_num = 4;
+	
+	for (var cur_block= 1; cur_block < block_num+1; cur_block++) {
+		var cur_angle_list_random = jsPsych.randomization.shuffle(cur_angle_list);
+		for (var angle_index=0; angle_index<cur_angle_list_random.length; angle_index++) {
+			
+			//rotate slider
+			var cur_rotation_adjustment = shuffled_rotation_list[rotation_counter];
+			var temp = (cur_rotation_adjustment+90)%360;
+			if (temp == 0) {
+				var cur_image_angle_start = 360;
+			} else {
+				var cur_image_angle_start = (cur_rotation_adjustment+90)%360;
+			};
+			var cur_start_stimulus = 'images/VCS_'+cur_image_angle_start.toString() + '.png'
+			
+			//determine current target stimulus
+			var cur_angle = cur_angle_list_random[angle_index]
+			var cur_stimulus = 'images/VCS_'+cur_angle.toString() + '.png'
+			
+			//trial procedure
+		    var trial_delayed_0 = {
+		      type: 'stimulus-image-roundslider-response-dynamic',
+		  	  stimulus: 'images/fixation_cross.png',
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+		    // labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+		  	  no_slider: true,
+				require_movement: false,
+				button_label: "start",
+		      prompt: '<p>Click start to begin the trial.</p>',
+				data: { trial_kind:"delayed",cur_block: cur_block, cur_trial:angle_index+1,total_trial_num: (cur_block-1)*cur_angle_list_random.length+(angle_index+1),phase: "start",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle, start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+		    }
+	
+		    var trial_delayed_1 = {
+		      type: 'stimulus-image-roundslider-response-dynamic',
+		  	  stimulus: 'images/fixation_cross.png',
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+		    // labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+		  	  no_slider: true,
+		      require_movement: false,
+				trial_duration: 500,
+		      prompt: '<p></p>',
+				button_present: false,
+				data: { trial_kind:"delayed",cur_block: cur_block, cur_trial:angle_index+1,total_trial_num: (cur_block-1)*cur_angle_list_random.length+(angle_index+1),phase: "fixation",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle, start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+		    }
+
+		  var trial_delayed_2 = {
+		    type: 'stimulus-image-roundslider-response-dynamic',
+			  stimulus: cur_stimulus,
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+		    // labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+			  no_slider: true,
+		    require_movement: false,
+			  trial_duration: 1000,
+		    prompt: '<p></p>',
+			  button_present: false,
+			  data: { trial_kind:"delayed",cur_block: cur_block, cur_trial:angle_index+1,total_trial_num: (cur_block-1)*cur_angle_list_random.length+(angle_index+1),phase: "stimulus",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle,start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+		  }
+  
+		  var trial_delayed_3 = {
+		    type: 'stimulus-image-roundslider-response-dynamic',
+			  stimulus: 'images/blank_canvas.png',
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+		    // labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+			  no_slider: true,
+		    require_movement: false,
+			  trial_duration: 2000,
+		    prompt: '<p></p>',
+			  button_present: false,
+			  run_countdown: true,
+			  //prompt: '<p>Please wait 5 seconds to respond.</p>',
+			  data: { trial_kind:"delayed",cur_block: cur_block, cur_trial:angle_index+1, total_trial_num: (cur_block-1)*cur_angle_list_random.length+(angle_index+1), phase: "blank",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle, start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+		  }
+  
+		  var trial_delayed_4 = {
+		    type: 'stimulus-image-roundslider-response-dynamic',
+			  stimulus: 'images/blank_canvas.png',
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+		    // labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+			  no_slider: false,
+		    require_movement: true,
+			  countdown_timer: false,
+		    prompt: '<p><b>Adjust the shape on the right to match the image you just saw on the left. </b> <br>Move the black dot along the circle to control the right shape. Then click the continue button.</p>',
+			 data: { trial_kind:"delayed",cur_block: cur_block, cur_trial:angle_index+1, total_trial_num: (cur_block-1)*cur_angle_list_random.length+(angle_index+1),phase: "response",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle, start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+		  }
+		  
+
+		  timeline.push(trial_delayed_0, trial_delayed_1,trial_delayed_2,trial_delayed_3,trial_delayed_4);
+		  rotation_counter = rotation_counter+1;
+		}
+		
+		if (cur_block==2) {
+			var break_instructions = {
+				type: 'instructions',
+				pages: [
+				        "Great job! You are halfway through the experiment. If you would like, take a short break. <br><br> When you are ready, click next to continue with the experiment."
+				    ],
+				    show_clickable_nav: true
+			}	
+
+			timeline.push(break_instructions);
+		}
+		
+	}
+	
+	
+	var undelayed_instructions_2 = {
+		type: 'instructions',
+		pages: [
+		        'Great job! <br><br> On the last 6 trials, the shape on the left will stay on the screen rather than disappearing, just like in the practice trials you did at the beginning of the experiment. <b>Your goal is the same as before: adjust the image on the right so that it matches the shape on the left as closely as possible</b>. Use the black dot at the top of the circle to adjust the shape on the right until it matches the image on the left.<br><br>Click next to continue.'
+		    ],
+		    show_clickable_nav: true
+	}
+	
+	timeline.push(undelayed_instructions_2);
+	
+	var undelayed_counter = 6;
+	var undelayed_num = 12;
+	
+	for (var cur_undelayed_index=6; cur_undelayed_index < undelayed_num; cur_undelayed_index++) {
+		
+		//rotate slider
+		var cur_rotation_adjustment = shuffled_rotation_list[rotation_counter];
+		var temp = (cur_rotation_adjustment+90)%360;
+		if (temp == 0) {
+			var cur_image_angle_start = 360;
+		} else {
+			var cur_image_angle_start = (cur_rotation_adjustment+90)%360;
+		};
+		var cur_start_stimulus = 'images/VCS_'+cur_image_angle_start.toString() + '.png'
+		
+		//determine current target stimulus
+		var cur_angle = cur_angle_list_undelayed[cur_undelayed_index]
+		var cur_stimulus = 'images/VCS_'+cur_angle.toString() + '.png'
+		
+	    var cur_undelayed_trial = {
+	      type: 'stimulus-image-roundslider-response-dynamic',
+			  stimulus: cur_stimulus,
+		    slider_stimulus: cur_start_stimulus,
+				rotation_adjustment: cur_rotation_adjustment,
+			  stimulus_base: 'images/VCS_',
+	    //labels: ['1', '360'],
+ 		  	  min: 0,
+ 		  	  max: 359,
+		      slider_radius: 200,
+		  	  start: 90,
+		  no_slider: false,
+	    require_movement: true,
+			countdown_timer: false,
+	    prompt: '<p><b>Adjust the shape on the right to match the image on the left.</b> <br>Move the black dot along the circle to control the right shape. Then click the continue button.</p>',
+			data: { trial_kind:"undelayed",cur_block: 1, cur_trial:cur_undelayed_index+1,total_trial_num: cur_undelayed_index+1, phase: "response",rotation_adjustment: cur_rotation_adjustment,correct_response: cur_angle, start_value: cur_image_angle_start,slider_start: 90, target_stimulus: cur_stimulus, slider_stimulus: cur_start_stimulus}
+	    }
+		
+		timeline.push(cur_undelayed_trial);
+		rotation_counter = rotation_counter+1;
+	};
+	
+	
+	// final response survey
+	var survey = {
+	  type: 'survey-text',
+		preamble: "Thanks for participating! We have a couple of brief questions to wrap up the experiment.",
+	  questions: [
+		  {
+			  prompt: "What strategy did you use to remember the shapes? Did you do anything during the two-second delay to help remember the shape on the left?", 
+			  placeholder: "", 
+			  rows: 4, 
+			  columns: 70
+			  },
+			  {
+				  prompt: "Did you have any technical issues during the study?", 
+				  placeholder: "", 
+				  rows: 4, 
+				  columns: 70
+				  },
+				  {
+					  prompt: "Any other comments?", 
+					  placeholder: "", 
+					  rows: 4, 
+					  columns: 70
+					  }]
+	};
+
+	timeline.push(survey);
+	
+	var temp = [];
+	temp.push(survey);
+    
+  
+  //preloading
+  
+  all_images = ['images/fixation_cross.png','images/blank_canvas.png'];
+  
+  for(var j=1; j < 361; j++){
+	  all_images.push('images/VCS_'+j.toString()+'.png');
+  };
+  
+  //create random code for final message
+  //start code creation script
+  function randLetter() {
+  var a_z = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var int =  Math.floor((Math.random() * a_z.length));
+  var rand_letter = a_z[int];
+  return rand_letter;
+  };
+  
+  var secretCode = "vcsMEM"
+  var code="";
+  
+  for (var i = 0; i < 7; i++){
+  code = code.concat(randLetter());
+  }
+  code = code.concat(secretCode);
+  
+  for (var i = 0; i < 10; i++){
+  code = code.concat(randLetter());
+  }
+  //end code creation script
+  
+  
+  //debrief and code message
+  var experiment_final = [];
+  var final_instructions = {
+  type: 'instructions',
+  size: 400,
+  pages: [
+          'Thanks for participating! This HIT is an experiment in which we are investigating how we perceive and remember unfamiliar shapes. By participating in this study, you are helping us in ongoing work on how what people see and remember is influenced by what they have learned in the past. If you have any questions, please feel free to send us a message (lupyanlab@gmail.com)!'
+          +"<br>" + "<br>"
+          +'<center>Your completion code for <u>mTurk</u> is</center>'
+          +"<br>"
+          +'<center><u><b style="font-size:20px">'+ code +'</b></u></center>'
+          +"<br>"
+          +'<center>Please copy/paste this code into the mTurk box.</center>'
+          ],
+  show_clickable_nav: false
+  }
+  
+  //add instructions trial to experiment
+  experiment_final.push(final_instructions);
+  
+  // function for storing data
+  function saveData(name, data){
+	  var xhr = new XMLHttpRequest();
+	  xhr.open('POST', 'write_data.php'); // 'write_data.php' is the path to the php file described above.
+	  xhr.setRequestHeader('Content-Type', 'application/json');
+	  xhr.send(JSON.stringify({filename: name, filedata: data}));
+  };
+
+
+  jsPsych.init({
+	  timeline: timeline,
+	  preload_images: all_images,
+	  show_preload_progress_bar: true,
+	  show_progress_bar: true,
+    on_finish: function() {
+	  //jsPsych.data.get().localSave('csv','test.csv');
+	  saveData("vcs_memory_"+subject_id_isodate, jsPsych.data.get().csv());
+      jsPsych.init({
+                   timeline: experiment_final});
+    },
+    default_iti: 0
+  });
+</script>
+
+</html>

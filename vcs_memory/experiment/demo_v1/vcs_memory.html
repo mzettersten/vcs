@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jspsych-6.1.0/jspsych.js"></script>
+  <script src="js/jspsych-stimulus-image-roundslider-response-dynamic.js"></script>
+  <script src="js/jspsych-6.1.0/plugins/jspsych-instructions.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>  
+<script src="js/roundSlider-1.4.1/src/roundslider.js"></script>
+<link rel="stylesheet" href="css/slider.css"></link>
+<link rel="stylesheet" href="js/roundSlider-1.4.1/src/roundslider.css"></link>
+  <link rel="stylesheet" href="js/jspsych-6.1.0/css/jspsych.css"></link>
+  <style>
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body></body>
+<script>
+	
+  // ORGANIZE SUBJECT ID & GENERAL PARAMETERS
+
+  // generate a random subject ID (just to be safe)
+  var subject_id = Math.floor(Math.random()*1000000);
+  subject_id="p"+subject_id.toString();
+  
+  var date = new Date();
+  var iso_date = date.toISOString()
+
+  //general function for grabbing parameter from a URL
+  function getParamFromURL( name ) {
+  	name = name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+  	var regexS = "[\?&]"+name+"=([^&#]*)";
+  	var regex = new RegExp( regexS );
+  	var results = regex.exec( window.location.href );
+  	if( results == null )
+  		return "";
+  	else
+  		return results[1];
+  }
+
+  //save assignment_id if it is part of the survey URL ?id=
+  var assignment_id  = getParamFromURL( 'id' );
+  
+  //otherwise just use the randomly generated subject ID
+  if (assignment_id==="") {
+  	assignment_id=subject_id;
+  };
+  //make sure that nobody can enter anything damaging or crazy for assignment_id
+  assignment_id.replace(/[^A-Za-z0-9_]/g, "");
+  console.log(assignment_id);
+  
+  assignment_id_isodate = assignment_id.concat("_",iso_date);
+  console.log(assignment_id_isodate);
+  
+  //add to all trials
+  jsPsych.data.addProperties({
+    participant: assignment_id,
+    iso_identifier: assignment_id_isodate
+  });
+	
+	var instruction_1 = {
+		type: 'instructions',
+		pages: [
+		        'Click next to view an undelayed estimation trial.'
+		    ],
+		    show_clickable_nav: true
+	}
+	
+    var undelayed_trial_1 = {
+      type: 'stimulus-image-roundslider-response-dynamic',
+  	  stimulus: 'images/VCS_360.png',
+    slider_stimulus: 'images/VCS_180.png',
+	  stimulus_base: 'images/VCS_',
+    labels: ['1', '360'],
+	  min: 1,
+	  max: 360,
+    slider_radius: 200,
+	  start: 180,
+	  no_slider: false,
+    require_movement: true,
+    prompt: '<p>Adjust the shape to match the image on the left. Then click the continue button.</p>',
+		data: { correct_response: 360, start_value: 180}
+    }
+	
+	var instruction_2 = {
+		type: 'instructions',
+		pages: [
+		        'Click next to view a delayed estimation/ memory trial.<br><br>On each trial, a shape will flash briefly in the window on the left side of the screen. Then, you will be asked to adjust a second shape to match the one you just saw. <br><br> Click next to start the trial.'
+		    ],
+		    show_clickable_nav: true
+	}
+	
+	
+    var trial_0 = {
+      type: 'stimulus-image-roundslider-response-dynamic',
+  	  stimulus: 'images/fixation_cross.png',
+      slider_stimulus: 'images/VCS_90.png',
+  	  stimulus_base: 'images/VCS_',
+      labels: ['1', '360'],
+  	  min: 1,
+  	  max: 360,
+      slider_radius: 200,
+  	  start: 90,
+  	  no_slider: true,
+		require_movement: false,
+		button_label: "start",
+      prompt: '<p>Click start to begin the trial.</p>',
+		data: { correct_response: 270, start_value: 90}
+    }
+	
+    var trial_1 = {
+      type: 'stimulus-image-roundslider-response-dynamic',
+  	  stimulus: 'images/fixation_cross.png',
+      slider_stimulus: 'images/VCS_90.png',
+  	  stimulus_base: 'images/VCS_',
+      labels: ['1', '360'],
+  	  min: 1,
+  	  max: 360,
+      slider_radius: 200,
+  	  start: 90,
+  	  no_slider: true,
+      require_movement: false,
+		trial_duration: 500,
+      prompt: '<p></p>',
+		button_present: false,
+		data: { correct_response: 270, start_value: 90}
+    }
+
+  var trial_2 = {
+    type: 'stimulus-image-roundslider-response-dynamic',
+	  stimulus: 'images/VCS_270.png',
+    slider_stimulus: 'images/VCS_90.png',
+	  stimulus_base: 'images/VCS_',
+    labels: ['1', '360'],
+	  min: 1,
+	  max: 360,
+    slider_radius: 200,
+	  start: 90,
+	  no_slider: true,
+    require_movement: false,
+	  trial_duration: 1000,
+    prompt: '<p></p>',
+	  button_present: false,
+	  data: { correct_response: 270, start_value: 90}
+  }
+  
+  var trial_3 = {
+    type: 'stimulus-image-roundslider-response-dynamic',
+	  stimulus: 'images/blank_canvas.png',
+    slider_stimulus: 'images/VCS_90.png',
+	  stimulus_base: 'images/VCS_',
+    labels: ['1', '360'],
+	  min: 1,
+	  max: 360,
+    slider_radius: 200,
+	  start: 90,
+	  no_slider: true,
+    require_movement: false,
+	  trial_duration: 1000,
+    prompt: '<p></p>',
+	  button_present: false,
+	  data: { correct_response: 270, start_value: 90}
+  }
+  
+  var trial_4 = {
+    type: 'stimulus-image-roundslider-response-dynamic',
+	  stimulus: 'images/blank_canvas.png',
+    slider_stimulus: 'images/VCS_90.png',
+	  stimulus_base: 'images/VCS_',
+    labels: ['1', '360'],
+	  min: 1,
+	  max: 360,
+    slider_radius: 200,
+	  start: 90,
+	  no_slider: false,
+    require_movement: true,
+    prompt: '<p>Adjust the shape to match the image you just saw. Then click the continue button.</p>',
+	 data: { correct_response: 270, start_value: 90}
+  }
+  
+  //preloading
+  
+  all_images = ['images/fixation_cross.png','images/blank_canvas.png'];
+  
+  for(var j=1; j < 361; j++){
+	  all_images.push('images/VCS_'+j.toString()+'.png');
+  };
+  
+  // function for storing data
+  function saveData(name, data){
+	  var xhr = new XMLHttpRequest();
+	  xhr.open('POST', 'write_data.php'); // 'write_data.php' is the path to the php file described above.
+	  xhr.setRequestHeader('Content-Type', 'application/json');
+	  xhr.send(JSON.stringify({filename: name, filedata: data}));
+  };
+
+
+  jsPsych.init({
+    timeline: [instruction_1, undelayed_trial_1, instruction_2,trial_0,trial_1,trial_2, trial_3, trial_4],
+	  preload_images: all_images,
+	  show_preload_progress_bar: true,
+    on_finish: function() {
+      jsPsych.data.displayData();
+	  saveData(assignment_id_isodate, jsPsych.data.get().csv());
+    },
+    default_iti: 0
+  });
+</script>
+
+</html>
