@@ -10,10 +10,12 @@ Zettersten, M., Suffill, E., & Lupyan, G. (2020). Nameability predicts subjectiv
 ## VCS Memory
 
 Experiment Demo:
-https://mzettersten.github.io/vcs/vcs_memory/experiments/v1/vcs_memory.html
+
+https://mzettersten.github.io/vcs/vcs_memory/experiment/v1/vcs_memory.html
 
 Analysis Overview:
 
+https://mzettersten.github.io/vcs/vcs_memory/analysis/analysis.html
 
 ## Questions
 
