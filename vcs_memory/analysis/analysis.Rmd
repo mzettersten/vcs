@@ -6,19 +6,24 @@ output:
     toc: true
     toc_depth: 3
     toc_float: true
+fig_width: 12 
+fig_height: 8 
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(here)
 library(cowplot)
+library(ggcorrplot)
+library(corrplot)
+library(knitr)
 theme_set(theme_cowplot())
 
 resp_data <- read.csv(here("..","processed_data","vcs_memory_resp_data_anon_v1.csv"))
 
 ```
 
-## SUMMARIZE SUBJECT LEVEL DATA
+## Summarize subject-level data
 
 ```{r, warning=F, message=F}
 #### summarize subject-level data
@@ -60,7 +65,7 @@ resp_data_clean <- resp_data_exclusions %>%
 ```
 
 
-## DESCRIPTIVE PLOTS  {.tabset}
+## Descriptive Plots  {.tabset}
 
 ### Difference in Response (All Trials)
 
@@ -87,7 +92,7 @@ ggplot(summarize_response_location,aes(response,n))+
   facet_wrap(~trial_kind)
 ```
 
-## Item-Wise Analysis
+## Item-wise Analysis
 
 Average response bias by item/ shape
 
@@ -123,7 +128,124 @@ Red = Modal Agreement.
 
 Green = Simpson Diversity.
 
-### Response Difference By Start Value
+## Correlations with Nameability Values {.tabset}
+
+### Mean Difference {.tabset}
+
+#### Undelayed
+
+```{r}
+cor_mat_undelayed <- cor(filter(item_response,trial_kind=="undelayed")[,c("mean_diff","sd_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+p.mat_undelayed <- cor_pmat(filter(item_response,trial_kind=="undelayed")[,c("mean_diff","sd_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+ggcorrplot(cor_mat_undelayed,type="lower",method="circle",lab=TRUE)
+```
+
+
+#### Delayed
+
+```{r}
+cor_mat_delayed <- cor(filter(item_response,trial_kind=="delayed")[,c("mean_diff","sd_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+p.mat_delayed <- cor_pmat(filter(item_response,trial_kind=="delayed")[,c("mean_diff","sd_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+ggcorrplot(cor_mat_delayed,type="lower",method="circle",lab=TRUE)
+```
+
+
+#### Tables 
+
+##### Undelayed {.tabset}
+
+###### Correlation Values
+
+```{r}
+cor_mat_undelayed %>%
+  kable()
+```
+
+###### P-Values
+
+```{r}
+p.mat_undelayed %>%
+  kable()
+```
+
+##### Delayed {.tabset}
+
+###### Correlation Values
+
+```{r}
+cor_mat_delayed %>%
+  kable()
+```
+
+###### P-Values
+
+```{r}
+p.mat_delayed %>%
+  kable()
+```
+
+
+### Absolute Difference {.tabset}
+
+#### Undelayed
+
+```{r}
+cor_mat_undelayed <- cor(filter(item_response,trial_kind=="undelayed")[,c("mean_abs_diff","sd_abs_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+p.mat_undelayed <- cor_pmat(filter(item_response,trial_kind=="undelayed")[,c("mean_abs_diff","sd_abs_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+ggcorrplot(cor_mat_undelayed,type="lower",method="circle",lab=TRUE)
+```
+
+#### Delayed
+
+```{r}
+cor_mat_delayed <- cor(filter(item_response,trial_kind=="delayed")[,c("mean_abs_diff","sd_abs_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+p.mat_delayed <- cor_pmat(filter(item_response,trial_kind=="delayed")[,c("mean_abs_diff","sd_abs_diff","simpson_diversity","modal_agreement","modal_response_agreement")])
+
+ggcorrplot(cor_mat_delayed,type="lower",method="circle",lab=TRUE)
+```
+
+#### Tables 
+
+##### Undelayed {.tabset}
+
+###### Correlation Values
+
+```{r}
+cor_mat_undelayed %>%
+  kable()
+```
+
+###### P-Values
+
+```{r}
+p.mat_undelayed %>%
+  kable()
+```
+
+##### Delayed {.tabset}
+
+###### Correlation Values
+
+```{r}
+cor_mat_delayed %>%
+  kable()
+```
+
+###### P-Values
+
+```{r}
+p.mat_delayed %>%
+  kable()
+```
+
+## Response Difference By Start Value
 
 ```{r, warning=F, message=F}
 ggplot(filter(resp_data_clean,trial_kind=="delayed"&abs(diff_response)<30),aes(x=start_value,y=diff_response))+
