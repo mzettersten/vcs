@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+PCeQv,.الرجاء تسمية هذه الصورة,25.968,16598,نجرع,17843,44.828,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_270.png,3,trial_lists/trial_list_3
+PCeQv,.الرجاء تسمية هذه الصورة,63.51,18665,كلب,10629,75.151,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,dog.png,3,trial_lists/trial_list_3
+PCeQv,.الرجاء تسمية هذه الصورة,81.478,6309,سلايم,2597,85.08,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,VCS_60.png,3,trial_lists/trial_list_3

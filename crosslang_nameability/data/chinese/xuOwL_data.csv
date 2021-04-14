@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+xuOwL,请为此图片命名,16.501,8521,狗,18196,35.718,3,这个名字有多适合这个图片？,1,dog.png,3,trial_lists/trial_list_3
+xuOwL,请为此图片命名,129.936,94182,星,6046,137,1,这个名字有多适合这个图片？,2,VCS_300.png,3,trial_lists/trial_list_3
+xuOwL,请为此图片命名,158.153,21132,方星,1568,160.734,1,这个名字有多适合这个图片？,3,VCS_270.png,3,trial_lists/trial_list_3
+xuOwL,请为此图片命名,173.43,12667,尖角,1657,176.103,2,这个名字有多适合这个图片？,4,triangle.png,3,trial_lists/trial_list_3

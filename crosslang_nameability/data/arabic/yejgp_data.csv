@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+yejgp,.الرجاء تسمية هذه الصورة,47.179,25472,شكل هندسي,28459,76.671,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_280.png,1,trial_lists/trial_list_1
+yejgp,.الرجاء تسمية هذه الصورة,130.718,54005,رسم تجريدي,10184,141.923,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_130.png,1,trial_lists/trial_list_1
+yejgp,.الرجاء تسمية هذه الصورة,174.733,32771,مربع,14976,190.731,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,square.png,1,trial_lists/trial_list_1

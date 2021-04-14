@@ -1,0 +1,16 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+3X4Kf,请为此图片命名,27.592,7535,花瓶,8174,36.78,3,这个名字有多适合这个图片？?,1,VCS_160.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,47.822,11017,围巾,1884,50.711,2,这个名字有多适合这个图片？?,2,VCS_100.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,59.901,9165,三角形,2338,63.245,4,这个名字有多适合这个图片？?,3,triangle.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,71.621,8348,手里剑,1803,74.431,3,这个名字有多适合这个图片？?,4,VCS_10.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,87.327,12870,背心,1983,90.316,1,这个名字有多适合这个图片？?,5,VCS_190.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,101.211,10868,头饰,2383,104.6,2,这个名字有多适合这个图片？?,6,VCS_310.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,111.16,6533,正方形,1319,113.485,4,这个名字有多适合这个图片？?,7,square.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,118.043,4532,围巾,1385,120.435,3,这个名字有多适合这个图片？?,8,VCS_130.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,129.212,8750,狗,1119,131.338,4,这个名字有多适合这个图片？?,9,dog.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,136.504,5139,头饰,2181,139.691,2,这个名字有多适合这个图片？?,10,VCS_280.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,153.7,13982,痰,1650,156.359,2,这个名字有多适合这个图片？?,11,VCS_40.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,160.864,4479,手里剑,1639,163.509,3,这个名字有多适合这个图片？?,12,VCS_340.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,167.004,3468,头饰,2017,170.027,2,这个名字有多适合这个图片？?,13,VCS_250.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,175.336,5282,浆糊,1684,178.026,2,这个名字有多适合这个图片？?,14,VCS_70.png,1,trial_lists/trial_list_1
+3X4Kf,请为此图片命名,185.918,7864,五边形,1937,188.861,4,这个名字有多适合这个图片？?,15,VCS_220.png,1,trial_lists/trial_list_1

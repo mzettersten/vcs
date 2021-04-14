@@ -1,0 +1,16 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+tyvfp,请为此图片命名,60.107,13264,三角形,4062,65.182,4,这个名字有多适合这个图片？,1,triangle.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,80.265,15061,狗,1618,82.891,4,这个名字有多适合这个图片？,2,dog.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,103.525,20613,兔头,5843,110.377,2,这个名字有多适合这个图片？,3,VCS_110.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,128.204,17804,十字花,1825,131.038,3,这个名字有多适合这个图片？,4,VCS_20.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,214.727,83661,多角形,1821,217.557,2,这个名字有多适合这个图片？,5,VCS_80.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,240.755,23175,星形,2440,244.203,3,这个名字有多适合这个图片？,6,VCS_50.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,260.701,16475,四角星,2127,263.837,3,这个名字有多适合这个图片？,7,VCS_350.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,309.955,46096,花瓶,1612,312.575,3,这个名字有多适合这个图片？,8,VCS_170.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,359.553,46955,不规则五角形,1509,362.07,3,这个名字有多适合这个图片？,9,VCS_260.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,384.874,22789,粮仓形,1453,387.336,3,这个名字有多适合这个图片？,10,VCS_230.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,415.184,27827,不规则星形,1336,417.527,3,这个名字有多适合这个图片？,11,VCS_320.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,449.626,32075,封闭曲线形,1825,452.459,2,这个名字有多适合这个图片？,12,VCS_140.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,478.341,25860,不规则五边形,3432,482.781,2,这个名字有多适合这个图片？,13,VCS_200.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,504.001,21197,四边形,2199,507.209,4,这个名字有多适合这个图片？,14,square.png,2,trial_lists/trial_list_2
+tyvfp,请为此图片命名,538.907,31676,不规则星形,1404,541.32,2,这个名字有多适合这个图片？,15,VCS_290.png,2,trial_lists/trial_list_2

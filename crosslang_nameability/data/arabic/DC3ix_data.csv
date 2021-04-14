@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+DC3ix,.الرجاء تسمية هذه الصورة,45.271,20175,نصف نجمة,35404,81.694,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_250.png,1,trial_lists/trial_list_1
+DC3ix,.الرجاء تسمية هذه الصورة,102.235,20514,شبه نجمة,5798,109.043,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_310.png,1,trial_lists/trial_list_1
+DC3ix,.الرجاء تسمية هذه الصورة,115.766,6700,مثلث,6163,122.939,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,triangle.png,1,trial_lists/trial_list_1

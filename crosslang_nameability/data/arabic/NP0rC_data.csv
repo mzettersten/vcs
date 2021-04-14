@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+NP0rC,.الرجاء تسمية هذه الصورة,36.276,8335,Dog,28337,65.624,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,dog.png,3,trial_lists/trial_list_3
+NP0rC,.الرجاء تسمية هذه الصورة,97.77,32095,Star without legs,7269,106.05,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_300.png,3,trial_lists/trial_list_3
+NP0rC,.الرجاء تسمية هذه الصورة,131.204,25118,Something slimy,4373,136.582,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,VCS_30.png,3,trial_lists/trial_list_3

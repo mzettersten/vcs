@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+TnjYr,请为此图片命名,27.626,19167,星,9705,38.341,2,这个名字有多适合这个图片？?,1,VCS_310.png,1,trial_lists/trial_list_1
+TnjYr,请为此图片命名,48.264,9896,盾,5333,54.604,2,这个名字有多适合这个图片？?,2,VCS_190.png,1,trial_lists/trial_list_1
+TnjYr,请为此图片命名,95.86,41226,星形飞镖,3800,100.666,2,这个名字有多适合这个图片？?,3,VCS_340.png,1,trial_lists/trial_list_1
+TnjYr,请为此图片命名,112.128,11435,星,2425,115.56,2,这个名字有多适合这个图片？?,4,VCS_280.png,1,trial_lists/trial_list_1

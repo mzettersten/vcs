@@ -1,0 +1,16 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+MpfaT,请为此图片命名,44.695,12178,三角形,24935,70.644,4,这个名字有多适合这个图片？?,1,triangle.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,81.787,11133,四角星,1058,83.855,4,这个名字有多适合这个图片？?,2,VCS_10.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,161.036,77169,铜锅炉,4647,166.692,3,这个名字有多适合这个图片？?,3,VCS_280.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,194.891,28190,三角帽,1222,197.124,3,这个名字有多适合这个图片？?,4,VCS_250.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,216.989,19840,猫头,4745,222.742,3,这个名字有多适合这个图片？?,5,VCS_130.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,234.749,11997,狗,1401,237.16,3,这个名字有多适合这个图片？?,6,dog.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,260.83,23662,乘号,1288,263.128,3,这个名字有多适合这个图片？?,7,VCS_40.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,270.47,7333,四角星,1508,272.987,3,这个名字有多适合这个图片？?,8,VCS_340.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,289.862,16867,谷堆,3059,293.93,3,这个名字有多适合这个图片？?,9,VCS_220.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,339.501,45561,坐垫,1587,342.097,2,这个名字有多适合这个图片？?,10,VCS_70.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,363.22,21115,A5纸,5202,369.432,3,这个名字有多适合这个图片？?,11,square.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,384.486,15045,裙子,1441,386.939,3,这个名字有多适合这个图片？?,12,VCS_100.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,407.384,20422,罐子,2910,411.303,3,这个名字有多适合这个图片？?,13,VCS_190.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,426.044,14732,星星,1117,428.169,3,这个名字有多适合这个图片？?,14,VCS_310.png,1,trial_lists/trial_list_1
+MpfaT,请为此图片命名,439.121,10943,罐子,881,441.013,3,这个名字有多适合这个图片？?,15,VCS_160.png,1,trial_lists/trial_list_1

@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+regtb,.الرجاء تسمية هذه الصورة,71.318,32214,يبدو وكأنه الجزء العلوي من الجسم,96309,168.64,3,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_130.png,1,trial_lists/trial_list_1
+regtb,.الرجاء تسمية هذه الصورة,252.15,83473,تبدو كقبعة شيف,4029,257.19,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_190.png,1,trial_lists/trial_list_1
+regtb,.الرجاء تسمية هذه الصورة,338.558,81323,لا ادري,2947,342.516,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,VCS_70.png,1,trial_lists/trial_list_1
+regtb,.الرجاء تسمية هذه الصورة,356.522,13963,لا ادري,4405,361.932,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,4,VCS_250.png,1,trial_lists/trial_list_1

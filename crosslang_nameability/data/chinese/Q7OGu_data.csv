@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+Q7OGu,请为此图片命名,19.114,10188,星形,8209,28.334,3,这个名字有多适合这个图片？?,1,VCS_250.png,1,trial_lists/trial_list_1
+Q7OGu,请为此图片命名,40.63,12268,海星,7191,48.827,4,这个名字有多适合这个图片？?,2,VCS_10.png,1,trial_lists/trial_list_1
+Q7OGu,请为此图片命名,55.344,6493,回旋镖,1799,58.149,2,这个名字有多适合这个图片？?,3,VCS_40.png,1,trial_lists/trial_list_1
+Q7OGu,请为此图片命名,76.814,18638,饼干,1635,79.454,2,这个名字有多适合这个图片？?,4,VCS_190.png,1,trial_lists/trial_list_1

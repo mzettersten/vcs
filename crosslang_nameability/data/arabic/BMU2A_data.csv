@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+BMU2A,.الرجاء تسمية هذه الصورة,17.696,9130,نجمة,10733,29.464,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_40.png,1,trial_lists/trial_list_1
+BMU2A,.الرجاء تسمية هذه الصورة,37.874,8356,جرة,2650,41.548,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_130.png,1,trial_lists/trial_list_1
+BMU2A,.الرجاء تسمية هذه الصورة,52.57,10979,قط,1384,54.98,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,VCS_100.png,1,trial_lists/trial_list_1
+BMU2A,.الرجاء تسمية هذه الصورة,63.071,8052,ذئب,4616,68.713,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,4,dog.png,1,trial_lists/trial_list_1

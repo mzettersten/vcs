@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+2A5TL,.الرجاء تسمية هذه الصورة,58.352,20462,نجمة غير مكتملة,27567,86.95,3,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_310.png,1,trial_lists/trial_list_1
+2A5TL,.الرجاء تسمية هذه الصورة,103.262,16249,وجه دب من دون ملامح,2080,106.363,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_160.png,1,trial_lists/trial_list_1
+2A5TL,.الرجاء تسمية هذه الصورة,115.653,9250,ذئب,2635,119.307,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,dog.png,1,trial_lists/trial_list_1

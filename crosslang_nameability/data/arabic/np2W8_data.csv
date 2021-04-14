@@ -1,0 +1,6 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+np2W8,.الرجاء تسمية هذه الصورة,85.492,8404,مثلث,5983,92.524,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,triangle.png,3,trial_lists/trial_list_3
+np2W8,.الرجاء تسمية هذه الصورة,98.814,6245,مربع,1231,101.06,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,square.png,3,trial_lists/trial_list_3
+np2W8,.الرجاء تسمية هذه الصورة,106.745,5655,كلب,5632,113.407,3,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,dog.png,3,trial_lists/trial_list_3
+np2W8,.الرجاء تسمية هذه الصورة,127.56,14121,كركي,7079,135.665,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,4,VCS_180.png,3,trial_lists/trial_list_3
+np2W8,.الرجاء تسمية هذه الصورة,143.146,7451,نجمة,3106,147.277,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,5,VCS_360.png,3,trial_lists/trial_list_3

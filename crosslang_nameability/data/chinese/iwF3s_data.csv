@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+iwF3s,请为此图片命名,13.823,10249,十字架,1680,16.526,3,这个名字有多适合这个图片？,1,VCS_320.png,2,trial_lists/trial_list_2
+iwF3s,请为此图片命名,22.079,5527,弹弓,929,24.022,3,这个名字有多适合这个图片？,2,VCS_80.png,2,trial_lists/trial_list_2
+iwF3s,请为此图片命名,32.177,8130,椰子,646,33.843,4,这个名字有多适合这个图片？,3,VCS_230.png,2,trial_lists/trial_list_2
+iwF3s,请为此图片命名,56.984,23119,瓦罐,1044,59.048,3,这个名字有多适合这个图片？,4,VCS_170.png,2,trial_lists/trial_list_2

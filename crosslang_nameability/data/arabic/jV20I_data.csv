@@ -1,0 +1,5 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+jV20I,.الرجاء تسمية هذه الصورة,30.256,17804,ذئب,20306,51.591,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,dog.png,1,trial_lists/trial_list_1
+jV20I,.الرجاء تسمية هذه الصورة,59.738,8116,بقعه,10878,71.632,3,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_40.png,1,trial_lists/trial_list_1
+jV20I,.الرجاء تسمية هذه الصورة,82.533,10875,خماسي,3098,86.649,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,VCS_220.png,1,trial_lists/trial_list_1
+jV20I,.الرجاء تسمية هذه الصورة,107.276,20600,معرفش,3609,111.898,1,ما مدى تطابق هذا الاسم مع هذه الصورة؟,4,VCS_310.png,1,trial_lists/trial_list_1

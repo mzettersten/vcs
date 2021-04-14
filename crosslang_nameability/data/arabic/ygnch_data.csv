@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+ygnch,.الرجاء تسمية هذه الصورة,41.183,25902,..,9791,51.999,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_310.png,1,trial_lists/trial_list_1
+ygnch,.الرجاء تسمية هذه الصورة,63.838,11783,مربع,7049,71.904,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,square.png,1,trial_lists/trial_list_1
+ygnch,.الرجاء تسمية هذه الصورة,81.93,9980,كلب,1612,84.561,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,dog.png,1,trial_lists/trial_list_1

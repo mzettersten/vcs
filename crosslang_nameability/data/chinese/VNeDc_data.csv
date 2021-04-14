@@ -1,0 +1,16 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+VNeDc,请为此图片命名,32.975,21895,三角星,6376,40.365,2,这个名字有多适合这个图片？?,1,VCS_280.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,55.395,15003,四角星,6408,62.807,3,这个名字有多适合这个图片？?,2,VCS_40.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,75.978,13146,围城,6418,83.402,2,这个名字有多适合这个图片？?,3,square.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,106.697,23270,？,2031,109.734,2,这个名字有多适合这个图片？?,4,VCS_100.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,114.518,4759,？,1798,117.322,2,这个名字有多适合这个图片？?,5,VCS_70.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,122.999,5650,铠甲,4157,128.163,2,这个名字有多适合这个图片？?,6,VCS_160.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,135.526,7336,？,1765,138.296,2,这个名字有多适合这个图片？?,7,VCS_130.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,165.11,26787,半成品,2129,168.244,2,这个名字有多适合这个图片？?,8,dog.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,178.351,10082,三角形,1957,181.313,3,这个名字有多适合这个图片？?,9,triangle.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,188.165,6825,不规则图形,2532,191.703,3,这个名字有多适合这个图片？?,10,VCS_220.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,196.416,4686,飞镖,1464,198.885,3,这个名字有多适合这个图片？?,11,VCS_340.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,209.448,10535,不规则图形,1815,212.274,2,这个名字有多适合这个图片？?,12,VCS_250.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,216.661,4363,飞镖,1276,218.943,3,这个名字有多适合这个图片？?,13,VCS_10.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,225.358,6388,不规则图形,2119,228.482,2,这个名字有多适合这个图片？?,14,VCS_190.png,1,trial_lists/trial_list_1
+VNeDc,请为此图片命名,234.103,5595,不规则图形,3440,238.548,2,这个名字有多适合这个图片？?,15,VCS_310.png,1,trial_lists/trial_list_1

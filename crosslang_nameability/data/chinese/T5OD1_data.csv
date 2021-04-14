@@ -1,0 +1,16 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+T5OD1,请为此图片命名,40.653,11315,杨桃,5083,46.753,3,这个名字有多适合这个图片？,1,VCS_240.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,145.815,99051,hug,5697,152.521,1,这个名字有多适合这个图片？,2,VCS_270.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,243.907,91377,肚兜,1784,246.699,2,这个名字有多适合这个图片？,3,VCS_150.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,257.116,10408,四角星,1502,259.628,4,这个名字有多适合这个图片？,4,VCS_30.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,289.126,29490,伸展运动,2667,292.801,2,这个名字有多适合这个图片？,5,VCS_300.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,304.159,11348,等腰三角,1959,307.127,4,这个名字有多适合这个图片？,6,triangle.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,318.771,11636,泡泡糖,1082,320.861,2,这个名字有多适合这个图片？,7,VCS_60.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,348.466,27597,收腰肚兜,2155,351.629,2,这个名字有多适合这个图片？,8,VCS_120.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,377.464,25827,闪亮,4629,383.101,2,这个名字有多适合这个图片？,9,VCS_360.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,497.237,114128,铁蒺藜,6373,504.619,3,这个名字有多适合这个图片？,10,VCS_330.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,525.662,21031,加宽肚兜,1457,528.129,2,这个名字有多适合这个图片？,11,VCS_180.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,536.821,8669,正方形,930,538.76,4,这个名字有多适合这个图片？,12,square.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,550.632,11859,五边形,2790,554.431,3,这个名字有多适合这个图片？,13,VCS_210.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,560.169,5730,狗,1460,562.641,4,这个名字有多适合这个图片？,14,dog.png,3,trial_lists/trial_list_3
+T5OD1,请为此图片命名,597.121,34457,笔托,2264,600.398,2,这个名字有多适合这个图片？,15,VCS_90.png,3,trial_lists/trial_list_3

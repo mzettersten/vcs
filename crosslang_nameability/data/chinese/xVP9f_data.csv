@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+xVP9f,请为此图片命名,57.376,46350,X胶,6976,65.364,2,这个名字有多适合这个图片？,1,VCS_60.png,3,trial_lists/trial_list_3
+xVP9f,请为此图片命名,77.769,12385,短袖,8977,87.751,3,这个名字有多适合这个图片？,2,VCS_90.png,3,trial_lists/trial_list_3
+xVP9f,请为此图片命名,99.466,11697,狗,1729,102.199,4,这个名字有多适合这个图片？,3,dog.png,3,trial_lists/trial_list_3

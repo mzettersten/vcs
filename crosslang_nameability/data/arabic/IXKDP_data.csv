@@ -1,0 +1,4 @@
+subjCode,naming_question,naming_expTimer,naming_rt,nameing_response,goodness_of_fit_rt,goodness_of_fit_expTimer,goodness_of_fit,confidence_question,trial_number,image,trial_list_num,batchFile
+IXKDP,.الرجاء تسمية هذه الصورة,27.168,9070,نجمه,11666,39.848,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,1,VCS_350.png,2,trial_lists/trial_list_2
+IXKDP,.الرجاء تسمية هذه الصورة,51.336,11458,ماعارفه,9856,62.202,2,ما مدى تطابق هذا الاسم مع هذه الصورة؟,2,VCS_290.png,2,trial_lists/trial_list_2
+IXKDP,.الرجاء تسمية هذه الصورة,68.309,6078,مثلث,4545,73.863,4,ما مدى تطابق هذا الاسم مع هذه الصورة؟,3,triangle.png,2,trial_lists/trial_list_2
