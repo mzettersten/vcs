@@ -13,7 +13,7 @@ arabic_naming_data <- read.csv(here("processed_data","vcs_nameability_arabic.csv
   mutate(language = "arabic")
 chinese_naming_data <- read.csv(here("processed_data","vcs_nameability_chinese.csv")) %>%
   mutate(language = "chinese")
-english_aming_data <- read.csv(here("processed_data","vcs_nameability_english.csv")) %>%
+english_naming_data <- read.csv(here("processed_data","vcs_nameability_english.csv")) %>%
   mutate(language = "english")
 #combine
 naming_data <- english_naming_data %>%
