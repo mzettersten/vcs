@@ -56,7 +56,17 @@ naming_similarity <- naming_similarity %>%
 naming_similarity %>%
   ggplot(aes(image1,image2,fill=response_cosine_sim_scaled))+
   geom_tile()+
-  scale_fill_viridis()+
-  facet_wrap(~language)
-ggsave(here("figures","vcs_naming_response_similarity.jpg"), height=6, width=6)
+  scale_fill_viridis(name="Response Similarity")+
+  facet_wrap(~language)+
+  theme(legend.title = element_text(size = 8), 
+        legend.text = element_text(size = 7))
+ggsave(here("figures","vcs_naming_response_similarity.jpg"), height=6, width=8)
 
+naming_similarity %>%
+  ggplot(aes(image1,image2,fill=word_cosine_sim_scaled))+
+  geom_tile()+
+  scale_fill_viridis(name="Word Similarity")+
+  facet_wrap(~language)+
+  theme(legend.title = element_text(size = 8), 
+        legend.text = element_text(size = 7))
+ggsave(here("figures","vcs_naming_word_similarity.jpg"), height=6, width=8)
