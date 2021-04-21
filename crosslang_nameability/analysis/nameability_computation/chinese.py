@@ -92,7 +92,7 @@ for category in categoryNames:
     for response in d.loc[d["image"]==category,"nameing_response"]:
         #break response into a list of unique words
         #first clean up response (removing punctuation, emoji, etc.)
-        #response_cleaned=clean_response(response)
+        response_cleaned=clean_response(response)
         #now tokenize
         curWordList = list(parser.tokenize(response)) #tokenize
         
